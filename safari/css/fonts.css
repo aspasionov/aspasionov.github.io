@@ -1,0 +1,88 @@
+/* ----- Fonts ------------------------- */
+@font-face {
+    font-family: 'a1010helvetika_normal';
+    src: url('../fonts/a1010helvetika_normal.eot');
+    src: url('../fonts/a1010helvetika_normal.eot') format('embedded-opentype'),
+         url('../fonts/a1010helvetika_normal.woff2') format('woff2'),
+         url('../fonts/a1010helvetika_normal.woff') format('woff'),
+         url('../fonts/a1010helvetika_normal.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AGForeignerRomanMedium';
+    src: url('../fonts/AGForeignerRomanMedium.eot');
+    src: url('../fonts/AGForeignerRomanMedium.eot') format('embedded-opentype'),
+         url('../fonts/AGForeignerRomanMedium.woff2') format('woff2'),
+         url('../fonts/AGForeignerRomanMedium.woff') format('woff'),
+         url('../fonts/AGForeignerRomanMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AGSouvenir';
+    src: url('../fonts/AGSouvenir.eot');
+    src: url('../fonts/AGSouvenir.eot') format('embedded-opentype'),
+         url('../fonts/AGSouvenir.woff2') format('woff2'),
+         url('../fonts/AGSouvenir.woff') format('woff'),
+         url('../fonts/AGSouvenir.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ag_letterica_bold';
+    src: url('../fonts/ag_letterica_bold.eot');
+    src: url('../fonts/ag_letterica_bold.eot') format('embedded-opentype'),
+         url('../fonts/ag_letterica_bold.woff2') format('woff2'),
+         url('../fonts/ag_letterica_bold.woff') format('woff'),
+         url('../fonts/ag_letterica_bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AGBenguiatCyrBook';
+    src: url('../fonts/AGBenguiatCyrBook.eot');
+    src: url('../fonts/AGBenguiatCyrBook.eot') format('embedded-opentype'),
+         url('../fonts/AGBenguiatCyrBook.woff2') format('woff2'),
+         url('../fonts/AGBenguiatCyrBook.woff') format('woff'),
+         url('../fonts/AGBenguiatCyrBook.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'bodoni_allfont_ru';
+    src: url('../fonts/bodoni_allfont_ru.eot');
+    src: url('../fonts/bodoni_allfont_ru.eot') format('embedded-opentype'),
+         url('../fonts/bodoni_allfont_ru.woff2') format('woff2'),
+         url('../fonts/bodoni_allfont_ru.woff') format('woff'),
+         url('../fonts/bodoni_allfont_ru.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ColabReg';
+    src: url('../fonts/ColabReg.eot');
+    src: url('../fonts/ColabReg.eot') format('embedded-opentype'),
+         url('../fonts/ColabReg.woff2') format('woff2'),
+         url('../fonts/ColabReg.woff') format('woff'),
+         url('../fonts/ColabReg.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ColabThi';
+    src: url('../fonts/ColabThi.eot');
+    src: url('../fonts/ColabThi.eot') format('embedded-opentype'),
+         url('../fonts/ColabThi.woff2') format('woff2'),
+         url('../fonts/ColabThi.woff') format('woff'),
+         url('../fonts/ColabThi.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Copse', serif;
+  src: url('https://fonts.googleapis.com/css?family=Copse');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff");
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url("../fonts/Glyphter.woff") format("woff");
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-style: normal;
+}
