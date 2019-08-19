@@ -1,0 +1,453 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+// ----------------------headlines----------------------
+h1
+	color: #ffffff
+	font-family: 'Trirong', serif
+	font-size: 30px
+	font-weight: 300
+	line-height: 35px
+	margin-bottom: 20px
+h3
+	color: #2b2d5c
+	font-family: 'Trirong', serif
+	font-size: 40px
+	font-weight: 300
+	line-height: 40px
+	margin-bottom: 20px
+h5
+	color: #2b2d5c
+	font-family: 'Trirong', serif
+	font-size: 26px
+	font-weight: 300
+	line-height: 28px
+	margin-bottom: 20px
+.title__white
+	color: #fff
+.hidden-mobile
+	display: none
+// ----------------------buttons----------------------
+.btn
+	display: inline-block
+	border: none
+	padding: 10px 20px
+	text-align: center
+	color: #2b2d5c
+	font-size: 14px
+	line-height: 16px
+	background-color: #f2c200
+	border-radius: 25px
+	&:hover
+		color: #fff
+		transition: all .3s
+		background-color: #DC9113
+.btn_second-st
+	background-color: #2b2d5c
+	text-transform: uppercase
+	color: #fff
+	&:hover
+		background-color: #000
+.btn_border
+	background-color: transparent
+	border: 1px solid #f2c200
+	color: #f2c200
+	text-transform: uppercase
+// ----------------------menu----------------------
+.menu-open-wrapper-page 
+	overflow: hidden
+	position: fixed
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+.burger-menu
+	display: block
+	position: absolute
+	right: 5px
+	top: 13px
+	z-index: 101
+	padding: 10px
+.burger-menu-box
+	display: block
+	width: 30px
+	padding: 8px 0
+.burger-menu-inner
+	display: block
+	position: relative
+	height: 3px
+	background-color: #fff
+	border-radius: 2px
+.burger-menu-inner:after,.burger-menu-inner:before
+	content: ''
+	position: absolute
+	left: 0
+	right: 0
+	height: 3px
+	background-color: #fff
+	border-radius: 2px
+.burger-menu-inner:after
+	top: -6px
+.burger-menu-inner:before
+	bottom: -6px
+.menu-wrapper-fixed
+	position: fixed
+	z-index: 100
+	top: 0
+	height: 100%
+	width: 100%
+	left: -100%
+	transition: left 0.4s cubic-bezier(0, 0.995, 0.99, 1)
+.menu-open-wrapper
+	padding: 20px
+	height: 100%
+	overflow: auto
+	-webkit-overflow-scrolling: touch
+    transition: background 0.25s ease-out
+.menu-burger--opened 
+	.burger-menu 
+    	position: absolute
+.menu-burger--opened 
+	.menu-wrapper-fixed 
+    	left: 0
+    	background-color: rgba(0,0,0, .7)
+.menu-burger--opened 
+	.menu-open-wrapper
+		width: 80%
+		max-width: 300px
+		background-color: #2b2d5c
+.menu-burger--opened
+	.menu-item 
+    	margin-left: 0
+.header-menu-nav
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+	min-height: 100%
+.menu
+	margin: 0
+	padding: 0
+.menu-item
+	position: relative
+	margin-bottom: 20px
+	padding: 0px
+	list-style-type: none
+	font-size: 20px
+	line-height: 24px
+	color: #000
+	width: 100%
+	&__link
+		color: #fff
+		text-decoration: none
+		font-family: 'Muli', sans-serif
+		font-size: 14px
+		font-weight: 400
+	&__link:hover
+		color: #f2c200
+		transition: color .3s
+//---------------header---------------
+.header
+	position: absolute
+	top: 0px
+	left: 0px
+	right: 0px
+	padding: 20px 0px
+	z-index: 1
+	.logo
+		width: 140px
+//---------------banner---------------
+.banner
+	position: relative
+	padding: 100px 0px 50px
+	text-align: center
+	min-height: 400px
+	background-color: #2b2d5c
+	color: #fff
+	&__item
+		margin-bottom: 60px
+	&__arrow
+		display: inline-block
+		position: absolute
+		left: 50%
+		bottom: 10px
+		transform: translateX(-50%)
+.social
+	&__item
+		vertical-align: middle
+		display: inline-block
+		margin-right: 5px
+		&:last-child
+			margin-right: 0px
+	&__link
+		font-size: 20px
+		color: #fff
+		&:hover
+			color: #f2c200
+//----------------------about-------------------------
+.about
+	text-align: center
+	&__img
+		display: none
+	&-item
+		position: relative
+		margin-bottom: 15px
+		&__link
+			position: absolute
+			left: 0px
+			right: 0px
+			top: 0px
+			bottom: 0px
+			cursor: pointer
+	&-item__title
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 400px
+		line-height: 18px
+		margin-bottom: 15px
+//-----------------------brands------------------------------
+.brand
+	text-align: center
+	background-color: #363762
+	&-items
+		text-align: center
+	&-item
+		margin-bottom: 15px
+//-----------------------portfolio------------------------------
+.portfolio
+	&-txt__wrap
+		text-align: center
+		background-color: #f2c200
+		padding: 20px
+		margin-bottom: 20px
+	&__link
+		color: #2b2d5c
+		font-size: 16px
+		&:hover
+			text-decoration: underline
+	&-gallery
+		&__col
+			text-align: center
+		&__item
+			position: relative
+			margin-bottom: 10px
+			&:hover
+				.portfolio-gallery__hover
+					display: flex
+		&__gallery__hover
+			display: none
+		&__row
+			display: flex
+			&:last-child
+				margin-bottom: 0px	
+			.portfolio-gallery__item
+				margin-right: 10px
+				&:last-child
+						margin-right: 0px	
+		&__footer
+			padding: 10px 20px
+			text-align: center
+		&__hover
+			display: none
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(0,0,0, .7)
+		&__link
+			display: block
+			position: relative
+			width: 50px
+			height: 50px
+			&:after
+				content: ''
+				height: 1px
+				width: 100%
+				background-color: #fff
+				position: absolute
+				top: 50%
+				left: 0px
+				right: 0px
+			&:before
+				content: ''
+				width: 1px
+				height: 100%
+				background-color: #b99717
+				position: absolute
+				top: 0px
+				left: 50%
+				bottom: 0px
+		&__social-wrap
+			display: none
+			position: absolute
+			bottom: 5px
+		&__share
+			display: block
+			margin-bottom: 5px
+			text-align: center
+			font-size: 16px
+			color: #fff
+	&__social
+		font-size: 20px
+		.social__link
+			color: #ffcc00
+			&:hover
+				color: #fff
+//-----------------------blog------------------------------
+.blog
+	text-align: center
+	background-color: #fafafd
+	&__item
+		margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+	&__img-wrap
+	&__item-txt
+		padding: 10px
+		background-color: #fff
+	&__date
+		font-size: 15px
+		font-weight: 300
+		color: rgb(43, 45, 92)
+		margin-bottom: 14px
+		.bold
+			font-weight: 600
+//-----------------------form------------------------------
+.form
+	padding: 20px 0px
+	background: #2b2d5c url('../img/form-bg.png') no-repeat center center
+	background-size: cover
+	text-align: center
+	&__title
+		color: #fff
+	&-wrapper
+		width: 100%
+		max-width: 540px
+		padding: 0 20px
+		margin-left: auto
+		margin-right: auto
+	&__input
+		width: 100%
+		padding: 10px 15px
+		margin-bottom: 15px
+		border: none
+		background-color: #b6b7c7
+		&::-webkit-input-placeholder
+			color: rgb(43, 45, 92)
+		&::-moz-placeholder
+		 	color: rgb(43, 45, 92)
+		&:-moz-placeholder
+		 	color: rgb(43, 45, 92)
+		&:-ms-input-placeholder
+			color: rgb(43, 45, 92)
+	&__textarea
+		height: 80px
+		width: 100%
+		padding: 10px 15px
+		background-color: #b6b7c7
+		margin-bottom: 20px
+		border: none
+		&::-webkit-input-placeholder
+			color: rgb(43, 45, 92)
+		&::-moz-placeholder
+		 	color: rgb(43, 45, 92)
+		&:-moz-placeholder
+		 	color: rgb(43, 45, 92)
+		&:-ms-input-placeholder
+			color: rgb(43, 45, 92)
+//--------------------------------footer---------------------
+.footer
+	padding: 20px 0px 0px
+	background-color: #2b2d5c
+	color: #fff
+	&-wrap
+		text-align: center
+		margin-bottom: 20px
+	&__contact
+		margin-bottom: 20px
+	&__logo
+		display: block
+		margin-bottom: 20px
+	&__title
+		font-family: 'Muli', sans-serif
+		font-weight: 600
+		font-size: 24px
+		color: #fff
+	&__title_sm
+		font-size: 20px
+	&__post
+		margin-bottom: 20px
+	&-menu__item
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0px
+	&-menu__link
+		color: #fff
+		font-size: 14px
+		font-weight: 400
+		&:hover
+			text-decoration: underline
+	&-gallery__wrap
+		display: grid
+		grid-template-columns: 50px 54px 74px
+		grid-template-rows: 42px 45px 61px
+		grid-gap: 15px
+		justify-content: center
+		img
+			width: 100%
+			height: 100%
+	&-gallery__item_lg
+		grid-column: 1 / 3
+		grid-row: 1 / 3
+.post
+	&__item
+		max-width: 320px
+		margin-left: auto
+		margin-right: auto
+		text-align: left
+		display: flex
+		margin-bottom: 20px
+	&__icon
+		flex-basis: 60px
+		margin-right: 15px
+		flex-shrink: 0
+	&__descr
+		flex-grow: 1
+		p
+			margin-bottom: 10px
+			color: rgba(255, 255, 255, .7)
+			font-size: 16px
+	&__date
+		font-size: 14px
+		font-weight: 300
+		.bold
+			font-weight: 600
+	&__link-wrap
+		max-width: 320px
+		margin-left: auto
+		margin-right: auto
+		text-align: left
+		padding-left: 75px
+	&__link
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		color: #fff
+//--------------------------------copyright---------------------
+.copyright
+	padding: 20px 0
+	text-align: center
+	border-top: 1px solid #40426c
+	&__txt
+		color: rgba(255, 255, 255, .3)
+		font-size: 14px
+		font-weight: 400
+//--------------------------------media---------------------
+@import "media";
