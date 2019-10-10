@@ -1,0 +1,1092 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "helpers";
+//-----------------------helpers----------------------------
+// ----------------------menu----------------------
+.menu-open-wrapper-page 
+	overflow: hidden
+	position: fixed
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+.burger-menu
+	display: block
+	position: absolute
+	top: 8px
+	right: 15px
+	z-index: 101
+	padding: 20px 10px 10px 10px
+	cursor: pointer
+	&__text
+		text-align: center
+		margin-top: 10px
+		font-family: $roboto
+		font-size: 12px
+		line-height: 1
+		color: $white
+.burger-menu-box
+	display: block
+	width: 48px
+	padding: 6px 0
+.burger-menu-inner
+	display: block
+	position: relative
+	height: 3px
+	background-color: $white
+	border-radius: 1px
+.burger-menu-inner:after,.burger-menu-inner:before
+	content: ''
+	position: absolute
+	left: 0
+	right: 0
+	height: 3px
+	background-color: $white
+	border-radius: 2px
+.burger-menu-inner:after
+	top: -9px
+.burger-menu-inner:before
+	bottom: -9px
+.menu-wrapper-fixed
+	position: fixed
+	z-index: 100
+	top: 100px
+	height: 100%
+	width: 100%
+	left: -100%
+.menu-open-wrapper
+	overflow: auto
+	-webkit-overflow-scrolling: touch
+    transition: background 0.25s ease-out
+.menu-burger--opened
+	.menu-wrapper-fixed 
+    	left: 0
+	.burger-menu
+		position: absolute
+.menu-burger--opened 
+	.menu-open-wrapper
+.menu-burger--opened
+	.menu-item 
+    	margin-left: 0
+.header-menu-nav
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+	min-height: 100%
+.menu
+	margin: 0
+	padding: 0
+.menu-item
+	text-align: center
+	position: relative
+	list-style-type: none
+	font-size: 20px
+	line-height: 24px
+	color: #000
+	width: 100%
+	&__link
+		display: block
+		color: $white
+		text-decoration: none
+		padding: 20px 10px
+		border-bottom: 2px solid $white
+		background-color: $black
+		&:hover
+			background-color: $blue
+			transition: $animation
+	&__get
+	    display: flex
+	    align-items: center
+	    padding: 10px 15px
+	    border-radius: 21px
+	    background-color: #267df4
+    	.icon-Apple_Icon
+	    	display: inline-block
+	    	vertical-align: middle
+	    	font-size: 24px
+	    	color: #fff
+	    	margin-right: 10px
+	&__get:hover
+		background-color: #2A0CB7
+		transition: all .3s 
+ &-txt
+    font-size: 16px
+    color: #fff
+    display: inline-block
+    vertical-align: middle
+//-----------------header------------------------
+.header
+	position: fixed
+	top: 0px
+	left: 0px
+	right: 0px
+	width: 100%
+	height: 100px
+	padding: 10px 0px
+	background-color: $black
+	z-index: 5
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+.logo
+	&__link
+		display: flex
+		align-items: center
+	&__text
+		margin-left: 10px
+		font-family: $roboto
+		color: $white
+		font-weight: 900
+.tel
+	display: block
+	padding: 20px 10px
+	text-align: center
+	flex-grow: 1
+	color: $white
+	background-color: $black
+	&--desktop
+		display: none
+	&__icon
+		vertical-align: middle
+		display: inline-block
+		margin-right: 10px
+	&__txt
+		text-align: left
+		vertical-align: middle
+		display: inline-block
+	&__descr
+		font-size: 12px
+		font-weight: 300
+		display: block
+		margin-bottom: 3px
+	&__number
+		font-weight: 500
+		font-size: 20px
+//-----------------banner------------------------
+.banner
+	position: relative
+	margin-top: 100px
+	padding: 30px 0px
+	min-height: 400px
+	color: $white
+	background: url('../../build/img/banner-bg.jpg') no-repeat center
+	background-size: cover
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0px
+		top: 0px
+		right: 0px
+		bottom: 0px
+		background-color: rgba(0,0,0, .74)
+		z-index: 1
+	&__icon
+		display: none
+		position: absolute
+		left: 50%
+		bottom: 50px
+		transform: translateX(-50%)
+		z-index: 2
+	&__txt
+		position: relative
+		z-index: 2
+		text-align: center
+	&__title
+		font-size: 35px //48
+		font-weight: 700
+		line-height: 35px
+		margin-bottom: 30px
+		span
+			display: block
+			font-size: 30px //36
+			font-weight: 500
+	&__form
+		&-wrap
+			margin-bottom: 20px
+		&-descr
+			display: block
+			font-size: 22px
+			font-weight: 300
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0px
+	&__input
+		margin-bottom: 20px
+	&__btn
+		width: 100%
+//-----------------services------------------------
+.services
+	text-align: center
+	&__title
+		&:after
+	&__item
+		margin-bottom: 20px
+	&__subtitle
+		display: block
+		color: $blue
+		font-size: 28px
+		font-weight: 300px
+		margin-bottom: 20px
+	&__img
+		margin-bottom: 20px
+//-------------------price-------------------------------
+.price
+	background: url('../../build/img/price-bg.jpg') no-repeat center
+	background-size: cover
+	position: relative
+	color: $white
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0px
+		bottom: 0px
+		width: 100%
+		background-color: rgba(0,0,0, .6)
+		z-index: 1
+	&__inner
+		position: relative
+		z-index: 2
+	&__subtitle
+		text-align: center
+		display: block
+		font-size: 26px
+		font-weight: 300
+		margin-bottom: 20px
+	.area
+		border: 1px solid #fff
+		padding: 10px
+		text-align: center
+		margin-bottom: 20px
+		&__title
+			display: block
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 20px
+		&-wrap
+			// display: flex
+			// justify-content: space-between
+		&__input-wrap
+			text-align: left
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__value
+			width: 50%
+			font-size: 12px
+			margin-bottom: 10px
+		&__input
+			// width: 20px
+	.package
+		border: 1px solid #fff
+		padding: 10px
+		text-align: center
+		margin-bottom: 20px
+		&__title
+			display: block
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 20px
+		&__wrap
+			display: flex
+			justify-content: space-between
+		&__btn-wrap
+			width: 30%
+			position: relative
+			&:hover
+				.package__descr
+					display: none
+		&__descr
+			display: none
+			font-size: 14px
+			line-height: 20px
+			font-weight: 400
+			position: absolute
+			text-align: center
+			left: 50%
+			top: 70px
+			padding: 10px
+			min-width: 300px
+			background-color: $white
+			color: $black
+			transform: translatex(-50%)
+			border-radius: 3px
+			z-index: 2
+			&:after
+				content: ''
+				display: block
+				border: 25px solid transparent
+				border-bottom-color: #fff
+				position: absolute
+				top: -50px
+				left: 50%
+				transform: translateX(-50%)
+		&__btn
+			width: 100%
+			position: relative
+			z-index: 3
+			position: relative
+	.advice
+		text-align: center
+		color: $white
+		&__item
+			margin-bottom: 20px
+		&__title
+			display: block
+			margin-bottom: 10px
+			font-size: 16px
+			font-weight: 300
+		&__value
+			font-size: 32px
+			font-weight: 400
+		&__btn
+			margin-bottom: 20px
+		&__tel
+			&-descr
+				font-size: 14px
+				font-weight: 300
+				display: block
+				margin-bottom: 3px
+			&-number
+				font-size: 18px
+				font-weight: 400
+//---------------------portfolio------------------------------
+.portfolio
+	text-align: center
+	.filter
+		&__item
+			margin-bottom: 20px
+		&__link
+			display: block
+			color: $blue
+			text-transform: uppercase
+			padding: 10px 15px
+			border: 2px solid $blue
+			border-radius: 25px
+			&:hover
+				background-color: $blue
+				color: $white
+				transition: $animation
+	&__img
+		height: 300px
+		overflow: hidden
+		position: relative
+		img
+			min-width: 100%
+			max-width: none
+			position: absolute
+			left:  50%
+			top: 50%
+			transform: translate(-50%,-50%)
+	.slick-dots
+		bottom: -35px
+		li
+			border-radius: 50%
+			overflow: hidden
+			button
+				background-color: $blue
+				&:hover
+					background-color: $black
+					transition: $animation
+				&:focus
+					background-color: $black
+//---------------------advantages---------------------------
+.advantages
+	text-align: center
+	background-color: $secondBg
+	&__item
+		margin-bottom: 20px
+	&__icon
+		height: 80px
+		width: 130px
+		margin: 0px auto 15px
+		padding-bottom: 10px
+		border-bottom: 2px solid $blue
+	&__text
+		font-size: 14px
+		font-weight: 500
+//-------------------process---------------------------
+.process
+	text-align: center
+	&__item
+		margin-bottom: 20px
+	&__txt
+		font-size: 24px//30px
+		font-weight: 300
+		margin-bottom: 15px
+//---------------------sponsors-------------------------------
+.sponsors
+	text-align: center
+	background-color: #f5f9fa
+	&-wrap
+		width: 100%
+		overflow-x: auto
+		&::-webkit-scrollbar
+			width: 32px
+			height: 5px
+			background-color: #e3e7e8
+		&::-webkit-scrollbar-thumb
+			height: 11px
+			border-radius: 2px
+			background-color: #19b5fe
+	&__inner
+		padding: 30px 0px
+		width: 1140px
+		display: flex
+		justify-content: space-between
+		align-items: center
+//--------------------team-----------------------------
+.team
+	margin-bottom: 40px
+	&__item
+		margin-bottom: 20px
+		text-align: center
+	&__img
+		position: relative
+		width: 230px
+		height: 230px
+		border-radius: 50%
+		overflow: hidden
+		margin: 0px auto 15px
+		img
+			max-width: none
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+	&__name
+		font-size: 24px
+		color: $blue
+		margin-bottom: 5px
+	&__place
+		font-size: 16px
+		font-weight: 400
+.quote
+	text-align: center
+	&__title
+		display: block
+		font-size: 25px//30px
+		font-weight: 400px
+		margin-bottom: 15px
+	&__text
+		font-size: 18px
+		margin-bottom: 15px
+	&__author
+		font-size: 18px
+		font-weight: 500
+	&__place
+		font-weight: 14
+//-------------------blog---------------------------------
+.blog
+	text-align: center
+	background-color: #f5f9fa
+	&__item
+		margin-bottom: 20px
+	&__img
+		margin-bottom: 10px
+	&__link
+		color: $blue
+		font-size: 18px
+		&:hover
+			text-decoration: underline
+//--------------------questions-----------------------------------
+.questions
+	background: #000 url('../../build/img/questions-bg.jpg') no-repeat center
+	background-size: cover
+	position: relative
+	color: $white
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0px
+		right: 0px
+		top: 0px
+		bottom: 0px
+		background-color: rgba(0,0,0, .6)
+	&-content
+		position: relative
+		z-index: 2
+		text-align: center
+	&__title
+		color: $white
+		&:after
+			background-color: $white
+	&__subtitle
+		font-size: 28px
+		margin-bottom: 20px
+		display: block
+	&-form
+		margin-bottom: 20px
+	&__input
+		margin-bottom: 15px
+		input
+			border-radius: 10px
+	&__textarea
+		margin-bottom: 15px
+		textarea
+			resize: none
+			height: 120px
+			border-radius: 10px
+	&-contact
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+		&__icon
+			flex-shrink: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 15px
+			height: 27px
+			width: 27px
+			border: 1px solid #fff
+			border-radius: 2px
+			font-size: 16px
+			color: $white
+		&__text
+			font-size: 18px
+			font-weight: 500
+	&__work-time
+		font-size: 16px
+		font-weight: 300
+//-----------------------map--------------------------
+.map
+	width: 100%
+	height: 330px
+	max-width: 1920px
+	margin: 0 auto
+	background: url('../../build/img/map-bg.jpg') no-repeat center
+	background-size: cover
+//-------------------footer-------------------------------
+.footer
+	background-color: #24241f
+	color: $white
+	text-align: center
+	&-content
+		padding-bottom: 30px
+		border-bottom: 1px solid #50504c
+		margin-bottom: 15px
+	&-menu
+		margin-bottom: 20px
+		&__item
+			margin-bottom: 15px
+		&__link
+			color: $white
+			&:hover
+				color: $blue
+				transition: $animation
+	&-social
+		&__text
+			font-size: 14px
+			display: block
+			margin-bottom: 5px
+		&__wrap
+			display: flex
+			justify-content: center
+		&__item
+			flex-shrink: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0px 5px
+			height: 27px
+			width: 27px
+			border: 1px solid #fff
+			border-radius: 2px
+			font-size: 16px
+			color: $white
+			&:hover
+				background-color: $blue
+				border-color: $blue
+				transition: $animation
+.copyright
+	&__txt
+		display: block
+		margin-bottom: 15px
+		font-size: 14px
+	&-logo
+		display: flex
+		justify-content: center
+		align-items: center
+		&__text
+			font-size: 14px
+			margin-right: 5px
+//-------------------media-------------------------------
+@media screen and (min-width: 480px)
+	.advantages
+		&-wrap
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+		&__item
+			width: 50%
+			padding: 0px 15px
+	.questions
+		&-contact
+			&__list
+				display: flex
+				flex-wrap: wrap
+			&__item
+				width: 50%
+				padding: 0px 5px
+@media screen and (min-width: 600px)
+	.banner
+		&__form
+			&-wrap
+				display: flex
+				justify-content: space-around
+				flex-wrap: wrap
+		&__input
+			width: 32%
+		&__btn
+			width: 32%
+	.price
+		.advice
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			&__item
+				width: 33%
+			&__btn
+			&__tel
+				width: 100%
+	.portfolio
+		&__img
+			height: 250px
+			img
+				height: 100%
+		.slick-slide
+			margin: 0 5px
+	.process
+		&__item
+			display: flex
+			margin-bottom: 0px
+		&__item--left-img
+			.process__txt
+				order: 2
+			.process__img
+				order: 1
+		&__txt
+			width: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 0px
+		&__img
+			width: 50%
+			height: 200px
+			overflow: hidden
+			position: relative
+			img
+				max-width: none
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+	.team
+		display: flex
+		flex-wrap: wrap
+		&__item
+			width: 50%
+			padding: 0 10px
+	.blog
+		&-wrap
+			display: flex
+			margin-left: -2%
+		&__item
+			width: 48%
+			margin-left: 2%
+			margin-bottom: 0px
+		&__img
+			height: 220px
+			position: relative
+			overflow: hidden
+			img
+				max-width: none
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%,-50%)
+	.questions
+		&-form
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		&__input
+			width: 30%
+		&__textarea
+			width: 100%
+		&-form-footer
+			width: 100%
+			text-align: center
+		&__btn
+			width: 30%
+	.map
+		height: 400px
+	.copyright
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__txt
+			margin-bottom: 0px
+@media screen and (min-width: 768px)
+	.hidden-mobile
+		display: block
+	.hidden-devices
+		display: none
+	.tel
+		text-align: right
+		margin-right: 100px
+		&--mobile
+			display: none
+		&--desktop
+			display: block
+	.banner
+		min-height: 600px
+		display: flex
+		justify-content: center
+		align-items: center
+		&__title
+			font-size: 48px
+			margin-bottom: 40px
+			span
+				font-size: 36px
+		&__input
+			width: 30%
+			padding: 0px 10px
+		&__btn
+			width: 30%
+		&__form
+			&-wrap
+				max-width: 954px
+				margin: 0 auto
+				justify-content: center
+				margin-bottom: 40px
+			&-descr
+				margin-bottom: 40px
+	.services
+		&__item
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__txt
+			text-align: left
+			width: 52%
+			padding-right: 20px
+		&__img
+			position: relative
+			width: 48%
+			height: 350px
+			margin-bottom: 0px
+			overflow: hidden
+			img
+				height: 100%
+				max-width: none
+				min-width: 100%	
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		&__item--left-img
+			.services__txt
+				text-align: left
+				order: 2
+				padding-left: 20px
+				padding-right: 0px
+			.services__img
+				order: 1
+	.price
+		.area
+			padding: 20px 25px
+			text-align: left
+			&-wrap
+				position: relative
+				display: flex
+				justify-content: space-between
+				&:after
+					content: ''
+					display: block
+					width: 98%
+					height: 9px
+					background-color: rgba(255,255,255, .5)
+					position: absolute
+					top: 30px
+					left: 50%
+					transform: translateX(-50%)
+					z-index: 1
+			&__input-wrap
+				flex-direction: column
+				align-items: center
+				text-align: center
+				&:first-child
+					align-items: flex-start
+				&:last-child
+					align-items: flex-end
+			&__input
+				width: 20px
+				position: relative
+				z-index: 2
+			&__value
+				width: auto
+				display: block
+		.package
+			padding: 20px 25px
+			text-align: left
+			&__btn-wrap
+				&:hover
+					.package__descr
+						display: block
+	.portfolio
+		.filter
+			display: flex
+			justify-content: center
+			margin-bottom: 20px
+			&-wrap
+				display: flex
+				border: 2px solid $blue
+				border-radius: 25px
+				padding: 3px 0px
+			&__item
+				margin-bottom: 0px
+				&:first-child
+					.filter__link
+						&:hover
+						border-radius: 25px 5px 5px 25px
+				&:last-child
+					.filter__link
+						&:after
+							display: none
+						&:hover
+						border-radius: 5px 25px 25px 5px
+			&__link
+				position: relative
+				border: none
+				border-radius: 0px
+				padding: 10px 20px
+				&:after
+					content: ''
+					display: block
+					width: 1px
+					height: 100%
+					background-color: $blue
+					position: absolute
+					right: 0px
+					top: 50%
+					transform: translateY(-50%)
+				&:hover
+					background-color: $blue
+					color: $white
+					transform: scale(1.2)
+					border-right: none
+					border-radius: 5px
+					transition: $animation
+					
+		&__img
+			height: 200px
+			img
+				height: 100%
+	.advantages
+		&__item
+			width: 33%
+	.process
+		&__txt
+			font-size: 30px
+		&__img
+			height: 260px
+	.team
+		margin-bottom: 60px
+		&__item
+			width: 33.33%
+	.quote
+		background: url('../../build/img/quote-bg.png') no-repeat left top, url('../../build/img/quote-bg2.png') no-repeat right bottom
+		&-wrap
+			width: 80%
+			margin: 0 auto
+	.blog
+		&__img
+			height: 280px
+	.questions
+		&-contact
+			&__item
+				width: 33%
+				padding: 0px 10px
+	.map
+		height: 500px
+	.footer
+		&-content
+			display: flex
+			justify-content: space-between
+			text-align: left
+			&__wrap
+				flex-grow: 1
+				display: flex
+				justify-content: flex-start
+		&-menu
+			margin-left: 60px
+			margin-bottom: 0px
+			flex-wrap: wrap
+			&:first-child
+				margin-left: 0px
+			&__item
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0px
+		&-social
+			width: auto
+			padding-left: 10px
+			&__wrap
+				justify-content: flex-start
+@media screen and (min-width: 1000px)
+	.hidden-devices
+		display: block
+	.hidden-desktop
+		display: none
+	.container
+		max-width: 1170px
+		padding: 0px 15px
+	.section-st
+		padding: 50px 0px
+	.page-title_h3
+		&:after
+			display: block
+	.tel
+		background-color: transparent
+		margin-right: 100px
+	.header
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		width: 100%
+		height: 100px
+		padding: 10px 0px
+		background-color: transparent
+		z-index: 5
+		&-wrap
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+	.burger-menu
+		position: absolute
+	.menu-wrapper-fixed
+		top: 0px	
+		height: auto
+		width: auto
+	.menu
+	.menu-item__link
+		text-transform: uppercase
+		padding: 10px 20px
+		background-color: transparent
+		border-bottom: 0px
+	.menu-burger--opened 
+		.burger-menu
+			position: absolute
+		.menu-wrapper-fixed
+			top: 0px
+			left: 0px
+			bottom: 0px
+			right: 0px	
+			height: auto
+			width: auto
+			background-color: rgba(0,0,0, .7)
+		.menu-open-wrapper
+			max-width: 320px
+			background-color: $white
+			height: 100%
+			display: flex
+			justify-content: center
+			flex-direction: column
+		.menu
+			&-item
+				text-align: left
+				margin: 20px 0px
+		.menu-item__link
+			color: $black
+			padding: 10px 20px
+			background-color: transparent
+			font-weight: 400
+			&:hover
+				background-color: $blue
+				color: $white
+	.banner
+		margin-top: 0px
+		min-height: 700px
+		&__icon
+			display: block
+		&__title
+			font-size: 48px
+			margin-bottom: 40px
+			span
+				font-size: 36px
+		&__input
+			width: 290px
+			margin-bottom: 28px
+		&__btn
+			width: 230px
+		&__form
+			&-wrap
+				background: url('../../build/img/banner-border.png') no-repeat center 22px
+				margin-bottom: 40px
+			&-descr
+				margin-bottom: 40px
+	.price
+		&__wrap
+			display: flex
+			justify-content: space-between
+		&-form
+			width: 57%
+		.advice
+			flex-direction: column
+			align-items: center
+			width: 43%
+			padding-left: 20px
+			&__item
+				width: 100%
+		.package
+			margin-bottom: 0px
+	.portfolio
+		&-wrap
+			display: flex
+			justify-content: flex-start
+			flex-wrap: wrap
+			margin-left: -2%
+		&__img
+			width: 31%
+			height: 260px
+			margin-left: 2%
+			margin-bottom: 20px
+	.advantages
+		&__item
+			width: 25%
+	.blog
+		&__img
+			height: 320px
+	.questions
+		&-wrap
+			display: flex
+		&-form
+			width: 66%
+			margin-bottom: 0
+		&-contact
+			text-align: left
+			width: 44%
+			padding-left: 30px
+			&__list
+				display: block
+			&__item
+				width: auto
+	.map
+		height: 600px
+	.footer
+		&-content
+			padding-bottom: 50px
+			margin-bottom: 27px
+//------------------------------------------------
