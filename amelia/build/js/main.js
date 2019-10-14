@@ -46,6 +46,7 @@ $('.icon-menu').click(function(event) {
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     items: 1,
+    center: true,
     loop: true,
     dots: true,
     dotsEach: true,
@@ -53,7 +54,8 @@ $(document).ready(function(){
     navText: [],
     responsive:{
       768:{
-        navContainer: '.banner__nav-buttons'
+        navContainer: '.banner__nav-buttons',
+        stagePadding: 260
       }
     }
 
