@@ -38,13 +38,13 @@ jQuery(function($){
   });
 
   $('.js-slider-review-video').slick({
+    infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     dots: false,
     vertical: true,
     verticalSwiping: true,
-    infinite: false,
     responsive: [
     {
       breakpoint: 1000,
@@ -117,9 +117,9 @@ jQuery(function($){
     }), !1
   });
 
-  $(".js-mask_phone").mask("+7 (000) 000-00-00");
+  $(".js-mask_phone").mask("+7 (999) 999-99-99");
 
-  $(window).on('load scroll',function(){ 
+  $(window).on('load scroll',function(){
     if ($(this).scrollTop() >= '130') {
         $('.header').addClass("fix");
     }
@@ -127,8 +127,7 @@ jQuery(function($){
 });
 
 });
-
-
+//mask-phone
 //Plugin placeholder
 (function(b,f,i){function l(){b(this).find(c).each(j)}function m(a){for(var a=a.attributes,b={},c=/^jQuery\d+/,e=0;e<a.length;e++)if(a[e].specified&&!c.test(a[e].name))b[a[e].name]=a[e].value;return b}function j(){var a=b(this),d;a.is(":password")||(a.data("password")?(d=a.next().show().focus(),b("label[for="+a.attr("id")+"]").attr("for",d.attr("id")),a.remove()):a.realVal()==a.attr("placeholder")&&(a.val(""),a.removeClass("placeholder")))}function k(){var a=b(this),d,c;placeholder=a.attr("placeholder");
 b.trim(a.val()).length>0||(a.is(":password")?(c=a.attr("id")+"-clone",d=b("<input/>").attr(b.extend(m(this),{type:"text",value:placeholder,"data-password":1,id:c})).addClass("placeholder"),a.before(d).hide(),b("label[for="+a.attr("id")+"]").attr("for",c)):(a.val(placeholder),a.addClass("placeholder")))}var g="placeholder"in f.createElement("input"),h="placeholder"in f.createElement("textarea"),c=":input[placeholder]";b.placeholder={input:g,textarea:h};!i&&g&&h?b.fn.placeholder=function(){}:(!i&&g&&

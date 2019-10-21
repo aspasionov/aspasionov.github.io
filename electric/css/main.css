@@ -812,11 +812,13 @@ a:hover {
   background-image: linear-gradient(to bottom, #f9a415, #fb6e29);
   outline: none;
   cursor: pointer;
-  transition: 0.4s;
+  transition: all 0.4s;
 }
 
 .btn:hover {
+  transform: translateY(3px);
   text-decoration: none;
+  box-shadow: 0 1px 0 0 #ce4b04;
   color: #fff;
   background-image: linear-gradient(to top, #f9a415, #f9a415);
 }
@@ -1293,7 +1295,6 @@ textarea {
   color: #0b1420;
   text-decoration: underline;
 }
-
 /* Min width 1000 pixels */
 @media only screen and (min-width: 1000px) {
   .menu-open-wrapper-page {
@@ -1353,8 +1354,10 @@ textarea {
   }
   .header.fix .menu-item.hidden .btn {
     text-transform: none;
-    min-width: 301px;
-    padding: 15px;
+    min-width: 250px;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 18px
   }
   /* end media min width 1000 pixels */
 }
