@@ -774,7 +774,7 @@ a:hover {
     height: 451px;
     width: 715px;
     z-index: 2;
-    background: url("../../img/bg-f.svg") no-repeat 50% 100%;
+    background: url("../img/bg-f.svg") no-repeat 50% 100%;
   }
   .footer__contact {
     margin-bottom: 30px;
@@ -1709,7 +1709,7 @@ textarea {
   color: #000;
   line-height: 60px;
   content: ' ';
-  background: url("../../img/arrow.png") no-repeat 50% 50%;
+  background: url("../img/arrow.png") no-repeat 50% 50%;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1802,7 +1802,7 @@ textarea {
     color: #000;
     line-height: 60px;
     content: ' ';
-    background: url("../../img/arrow.png") no-repeat 50% 50%;
+    background: url("../img/arrow.png") no-repeat 50% 50%;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -1885,7 +1885,7 @@ textarea {
 }
 
 .section-st__info {
-  background: url("../../img/bg_2.jpg") no-repeat 50% 50%;
+  background: url("../img/bg_2.jpg") no-repeat 50% 50%;
   color: #fff;
   background-size: cover;
 }
@@ -1923,7 +1923,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 9px;
-  background: url("../../img/svg/icon-check.svg") no-repeat 50% 50%;
+  background: url("../img/svg/icon-check.svg") no-repeat 50% 50%;
   width: 14px;
   height: 11px;
 }
@@ -1994,7 +1994,7 @@ textarea {
   color: #000;
   line-height: 60px;
   content: ' ';
-  background: url("../../img/arrow.png") no-repeat 50% 50%;
+  background: url("../img/arrow.png") no-repeat 50% 50%;
   display: inline-block;
   width: 20px;
   height: 20px;
