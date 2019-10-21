@@ -467,9 +467,7 @@ a:hover {
 .fancybox-close-small svg {
   display: none;
 }
-.fancybox-button--play {
-  display: none !important;
-}
+
 .fancybox-close-small:before, .fancybox-close-small:after {
   content: ' ';
   position: absolute;
@@ -488,6 +486,10 @@ a:hover {
 
 .fancybox-close-small:after {
   bottom: 8px;
+}
+
+.fancybox-button--play {
+  display: none !important;
 }
 
 .hidden {
