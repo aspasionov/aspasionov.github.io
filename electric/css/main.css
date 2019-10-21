@@ -453,7 +453,22 @@ a:hover {
 #middle {
   padding-top: 82px;
 }
-
+.fancybox-button--close:after {
+  z-index: 3;
+   content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+    background: url('../img/svg/close.svg') no-repeat center !important;
+}
+.fancybox-button--close svg {
+  display: none !important;
+}
 .fancybox-slide--html .fancybox-close-small {
   top: 10px !important;
   right: 10px !important;
