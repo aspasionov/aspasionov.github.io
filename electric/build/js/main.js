@@ -30,9 +30,9 @@ jQuery(function($){
   });
 
   $('.js-slider-review-img_nav').slick({
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    asNavFor: '.js-slider-review-img',
+    asNavFor: '.js-slider-review-img ',
     dots: true,
     focusOnSelect: true
   });
