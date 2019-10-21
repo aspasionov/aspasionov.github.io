@@ -1740,7 +1740,7 @@ textarea {
   .review__bottom {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
   .review .title-site_line {
     margin-bottom: 20px;
@@ -1778,6 +1778,9 @@ textarea {
     width: 410px;
     min-width: 410px;
     margin: 0 20px 0 -10px !important;
+  }
+  .review-slider-photo_nav .slick-arrow {
+    display: block !important;
   }
   .review-slider-photo_nav .review-slider-thumb {
     padding: 0 10px;

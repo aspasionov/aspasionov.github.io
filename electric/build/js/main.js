@@ -30,7 +30,7 @@ jQuery(function($){
   });
 
   $('.js-slider-review-img_nav').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.js-slider-review-img ',
     dots: true,
