@@ -467,7 +467,9 @@ a:hover {
 .fancybox-close-small svg {
   display: none;
 }
-
+.fancybox-button--play {
+  display: none !important;
+}
 .fancybox-close-small:before, .fancybox-close-small:after {
   content: ' ';
   position: absolute;
@@ -816,6 +818,12 @@ a:hover {
 }
 
 .btn:hover {
+  text-decoration: none;
+  box-shadow: 0 4px 0 0 #ce4b04;
+  color: #fff;
+  background-image: linear-gradient(to top, #f9a415, #f9a415);
+}
+.btn:active {
   transform: translateY(3px);
   text-decoration: none;
   box-shadow: 0 1px 0 0 #ce4b04;
@@ -2168,6 +2176,7 @@ textarea {
 }
 
 .steps__icon {
+  height: 120px;
   margin-bottom: 28px;
 }
 

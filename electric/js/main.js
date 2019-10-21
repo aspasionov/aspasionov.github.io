@@ -87,7 +87,8 @@ jQuery(function($){
 
   $(".fancybox").fancybox({
     openEffect  : 'none',
-    closeEffect : 'none'
+    // closeEffect : 'none',
+    showCloseButton: 'true'
   });
 
   $('.scrollto').click(function(event) {
