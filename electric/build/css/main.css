@@ -1664,7 +1664,7 @@ textarea {
 }
 
 .review-slider-video__item {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   position: relative;
   width: 100%;
   padding-top: 56.4% !important;
@@ -1872,7 +1872,7 @@ textarea {
     width: 340px;
   }
   .review__video .review-slider-video {
-    padding: 30px 20px 3px;
+    padding: 35px 20px 9px;
     box-shadow: 10px 15px 40px 0 rgba(0, 0, 0, 0.15);
   }
   .review__video .review-slider-video__item {
@@ -2196,7 +2196,7 @@ textarea {
 }
 
 .steps__icon {
-  height: 120px;
+  height: 111px;
   margin-bottom: 28px;
 }
 
