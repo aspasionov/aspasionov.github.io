@@ -2406,9 +2406,9 @@ fabrication
  .info-contact__btn span {
   display: inline;
  }
- /*.info-contact__btn:before {
+ .info-contact__btn:before {
     width: 44px;
- }*/
+ }
  .info-contact__item-txt {
   font-size: 16px;
   line-height: 20px;
