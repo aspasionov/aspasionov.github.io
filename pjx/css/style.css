@@ -1928,18 +1928,10 @@ select option {
 .pricing__list-item {
   position: relative;
   width: 48%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 10px;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 17px;
+  padding-left: 30px;
 }
 
 .pricing__list-item .check-icon {
@@ -1958,12 +1950,10 @@ select option {
 .pricing__list-item .check {
   width: 18px;
   height: 15px;
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 2px;
   padding: 0px;
-}
-
-.pricing__list-item span {
-  padding-right: 18px;
 }
 
 .pricing .check-hidden .check-icon {
@@ -2390,6 +2380,17 @@ select option {
     margin-top: 4px;
     margin-left: 10px;
   }
+  .pricing__list-item {
+    padding-right: 30px;
+    padding-left: 0px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .pricing__list-item .check {
+    right: 0px;
+    left: auto;
+    top: 5px;
+  }
   .partners__item-img {
     margin-bottom: 60px;
   }
@@ -2814,6 +2815,7 @@ select option {
   }
   .pricing__list-wrap {
     margin-right: 40px;
+    margin-bottom: 0px;
   }
   .pricing__list-title {
     display: block;
@@ -2836,17 +2838,22 @@ select option {
     display: -ms-flexbox;
     display: flex;
     width: auto;
+    padding-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
   }
   .pricing__list-item .check-icon {
     padding: 0;
     position: absolute;
-    left: 50%;
+    left: 30px;
     top: 50%;
     width: 18px;
     height: 15px;
-    margin: -7px 0 0 -9px;
+    margin: -7px 0 0 0px;
     background-image: url("../img/check.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -2864,6 +2871,7 @@ select option {
         -ms-flex-positive: 0;
             flex-grow: 0;
     position: relative;
+    top: 0px;
     padding: 24px 30px;
     margin-left: 20px;
     border-left: 1px solid #efefef;
@@ -2871,8 +2879,8 @@ select option {
     display: block;
     width: 180px;
   }
-  .pricing__list-item .check-hidden .check-icon {
-    background: none;
+  .pricing__list-item:last-child {
+    margin-bottom: 0px;
   }
   .pricing__list-item:last-child .check {
     padding-bottom: 19px;
@@ -2971,6 +2979,14 @@ select option {
   }
   .pricing {
     padding: 130px 0px 90px;
+  }
+  .pricing__wrap {
+    padding: 0px 80px;
+  }
+  .pricing__list-wrap {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .pricing__list-title {
     width: 210px;
