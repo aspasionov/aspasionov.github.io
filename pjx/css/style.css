@@ -1364,12 +1364,38 @@ select option {
 }
 
 .sticky {
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   position: fixed;
   top: 0px;
   -webkit-transition: 0.2s top ease-in;
   -o-transition: 0.2s top ease-in;
   transition: 0.2s top ease-in;
   z-index: 99;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 /* - banner -------- */
