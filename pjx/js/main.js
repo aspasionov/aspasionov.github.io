@@ -1,4 +1,4 @@
-"use strict"
+
 $(function(){
   // $('input[placeholder], textarea[placeholder]').placeholder();
   // $(".mask-phone").mask("+7 (999) 999-99-99");
@@ -13,12 +13,10 @@ $(function(){
      $('body').addClass('menu-open-wrapper-page');
    }
   });
-  
 //slider
   $('.connect__slider').slick({
     dots: true,
     arrows: false,
-    appendDots: '.connect__slider-dots',
     slideToShow: 1,
     slidesToScroll: 1,
     appendArrows: '.connect__slider-buttons',
@@ -48,16 +46,23 @@ $(function(){
             verticalFit: true
         }
     });
-
+  //header
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > ($('.header').height() + 100)){  
+    $('.fixed-panel-nav').addClass("sticky");
+  }
+  else{
+    $('.fixed-panel-nav').removeClass("sticky");
+  }
+  });
 });
-//checkbox
-// let checkbox = document.querySelectorAll('.pricing__item-bonus');
-// let checkedImg = document.querySelectorAll('.checked-img');
-
-// for(let i = 0;i < checkbox.length; i++) {
-//   checkbox[i].checked, function(ev) {
-//     for(let x = 0;x < checkedImg.length; x++)
-//   checkedImg[x].style.display = "block";
-// }
-// };
+//radio
+let radio = document.querySelectorAll('.pricing__item-bonus');
+let check = document.querySelectorAll('.pricing__list-item .check img');
+for(let i = 0;i < radio.length; i++) {
+  radio[i].addEventListener('click' , function(ev) {
+    for(let x = 0;x < check.length; x++)
+        check[x].style.display = "block";
+})
+};
 
