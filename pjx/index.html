@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="fixed-panel-nav">
     <div id="wrapper">
         <!-- header -->
-        <header id="header" class="header fixed-panel-nav">
+        <header id="header" class="header">
             <div class="container header__wrap">
                 <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
                 <div class="head-menu">
@@ -334,162 +334,168 @@
               <div class="container">
                 <span class="title-h2">Best Pricing</span>
                 <span class="pricing__subtitle">Enthusiastically facilitate prospective infrastructures without interactive technology. Proactively optimize error-free alignments vis-a-vis multimedia based.</span>
-                <div class="pricing__wrap">
-                  <div class="pricing__list-wrap">
-                    <span class="pricing__list-title">
-                       <span class="title">x1 месяц</span>
-                      <span class="price">RUB 490</span>
-                    </span>
-                    <ul class="pricing__list">
-                      <li class="pricing__list-item">
-                      <span>Виртуальный сервер</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>Базовая настройка</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>Онлайн поддержка</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>Обратный вызов</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>Выделенный IP</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>SSL сертификат</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    <li class="pricing__list-item">
-                      <span>Домен в подарок</span>
-                      <span class="check">
-                        <img src="img/check.png" alt="">
-                      </span>
-                    </li>
-                    </ul>
-                  </div>
-                  <div class="pricing__items">
-                    <label for="pricing-checkbox1" class="pricing__item">
-                      <input type="radio" name="pricing" value="price-package1" id="pricing-checkbox1" class="pricing__checkbox">
-                      <div class="pricing__checkbox-content">
-                        <div class="pricing__mounth">
-                        x1 месяц
-                       
-                      </div>
-                      <div class="pricing__summ">
-                        Сумма
-                        <span class="price">
-                          490 RUB
+                <form action="#" name="pricing">
+                    <div class="pricing__wrap">
+                      <div class="pricing__list-wrap">
+                        <span class="pricing__list-title">
+                           <span class="title">x1 месяц</span>
+                          <span class="price">RUB 490</span>
                         </span>
+                        <ul class="pricing__list">
+                          <li class="pricing__list-item">
+                          <span>Виртуальный сервер</span>
+                          <span class="check">
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>Базовая настройка</span>
+                          <span class="check">
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>Онлайн поддержка</span>
+                          <span class="check">
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>Обратный вызов</span>
+                          <span class="check">
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>Выделенный IP</span>
+                          <span class="check">
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>SSL сертификат</span>
+                          <span class="check check-hidden" data-hidden>
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        <li class="pricing__list-item">
+                          <span>Домен в подарок</span>
+                          <span class="check check-hidden" data-hidden>
+                            <span class="check-icon"></span>
+                          </span>
+                        </li>
+                        </ul>
                       </div>
-                      <div class="pricing__result">
-                        Итого
-                        <span class="price">
-                          490 RUB  
-                        </span>
+
+                      <div class="pricing__items">
+                        <label class="pricing__item">
+                          <input type="radio" name="pricing" class="pricing__checkbox" value="1" checked>
+                          <div class="pricing__checkbox-content">
+                            <div class="pricing__mounth">
+                            x1 месяц
+                           
+                          </div>
+                          <div class="pricing__summ">
+                            Сумма
+                            <span class="price">
+                              490 RUB
+                            </span>
+                          </div>
+                          <div class="pricing__result">
+                            Итого
+                            <span class="price">
+                              490 RUB  
+                            </span>
+                          </div>
+                          </div>
+                        </label>
+
+                        <label class="pricing__item">
+                          <input type="radio" name="pricing" value="6" class="pricing__checkbox">
+                          <div class="pricing__checkbox-content">
+                            <div class="pricing__mounth">
+                            x6 месяцев
+                             <div class="pricing__mounth-footer">
+                              <span class="discount">
+                              15% Savings
+                            </span>
+                            </div>
+                            
+                          </div>
+                          <div class="pricing__summ">
+                            Сумма
+                            <span class="price">
+                              415 RUB
+                            </span>
+                          </div>
+                          <div class="pricing__result">
+                            Итого
+                            <span class="price">
+                              2490 RUB  
+                            </span>
+                          </div>
+                          </div>
+                        </label>
+
+                        <label class="pricing__item">
+                          <input type="radio" name="pricing" value="12" class="pricing__checkbox " data-all-checked="true">
+                          <div class="pricing__checkbox-content">
+                            <div class="pricing__mounth">
+                            x12 месяц
+                            <div class="pricing__mounth-footer">
+                              <span class="discount">
+                              30% Savings
+                            </span>
+                            <span class="bonus">+ Бонус</span>
+                            </div>
+                          </div>
+                          <div class="pricing__summ">
+                            Сумма
+                            <span class="price">
+                              340 RUB
+                            </span>
+                          </div>
+                          <div class="pricing__result">
+                            Итого
+                            <span class="price">
+                              4090 RUB   
+                            </span>
+                          </div>
+                          </div>
+                        </label>
+
+                        <label class="pricing__item pricing__item-bonus">
+                          <input type="radio" name="pricing" value="24" class="pricing__checkbox" data-all-checked="true">
+                          <div class="pricing__checkbox-content">
+                            <div class="pricing__mounth">
+                            x24 месяц
+                            <div class="pricing__mounth-footer">
+                              <span class="discount">
+                              Лучшая цена
+                            </span>
+                            <span class="bonus">+ Бонус</span>
+                            </div> 
+                          </div>
+                          <div class="pricing__summ">
+                            Total
+                            <span class="price">
+                              USD 20.99  
+                            </span>
+                          </div>
+                          <div class="pricing__result">
+                            Sub Total
+                            <span class="price">
+                              USD 20.99    
+                            </span>
+                          </div>
+                          </div>
+                        </label>
                       </div>
-                      </div>
-                    </label>
-                      <label for="pricing-checkbox2" class="pricing__item">
-                      <input type="radio" name="pricing" value="price-package1" id="pricing-checkbox2" class="pricing__checkbox">
-                      <div class="pricing__checkbox-content">
-                        <div class="pricing__mounth">
-                        x6 месяцев
-                         <div class="pricing__mounth-footer">
-                          <span class="discount">
-                          15% Savings
-                        </span>
-                        </div>
-                        
-                      </div>
-                      <div class="pricing__summ">
-                        Сумма
-                        <span class="price">
-                          415 RUB
-                        </span>
-                      </div>
-                      <div class="pricing__result">
-                        Итого
-                        <span class="price">
-                          2490 RUB  
-                        </span>
-                      </div>
-                      </div>
-                    </label>
-                      <label for="pricing-checkbox3" class="pricing__item">
-                      <input type="radio" name="pricing" value="price-package3" id="pricing-checkbox3" class="pricing__checkbox ">
-                      <div class="pricing__checkbox-content">
-                        <div class="pricing__mounth">
-                        x12 месяц
-                        <div class="pricing__mounth-footer">
-                          <span class="discount">
-                          30% Savings
-                        </span>
-                        <span class="bonus">+ Бонус</span>
-                        </div>
-                      </div>
-                      <div class="pricing__summ">
-                        Сумма
-                        <span class="price">
-                          340 RUB
-                        </span>
-                      </div>
-                      <div class="pricing__result">
-                        Итого
-                        <span class="price">
-                          4090 RUB   
-                        </span>
-                      </div>
-                      </div>
-                    </label>
-                      <label for="pricing-checkbox4" class="pricing__item pricing__item-bonus">
-                      <input type="radio" name="pricing" value="price-package4" id="pricing-checkbox4" class="pricing__checkbox">
-                      <div class="pricing__checkbox-content">
-                        <div class="pricing__mounth">
-                        x24 месяц
-                        <div class="pricing__mounth-footer">
-                          <span class="discount">
-                          Лучшая цена
-                        </span>
-                        <span class="bonus">+ Бонус</span>
-                        </div> 
-                      </div>
-                      <div class="pricing__summ">
-                        Total
-                        <span class="price">
-                          USD 20.99  
-                        </span>
-                      </div>
-                      <div class="pricing__result">
-                        Sub Total
-                        <span class="price">
-                          USD 20.99    
-                        </span>
-                      </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                <div class="pricing__footer">
-                  <a href="#" class="btn pricing__btn">заказать</a>
-                </div>
+                    </div>
+                    <div class="pricing__footer">
+                      <button type="button" class="btn pricing__btn">заказать</button>
+                    </div>
+                </form>
               </div>
             </section>
             <section class="partners">
@@ -544,7 +550,7 @@
                     </div>
                   </div>
                   </div>
-                  <div class="blog__item hidden-device">
+                  <div class="blog__item hidden-block">
                     <div class="blog__item-img">
                       <img src="https://via.placeholder.com/360x220" alt="">
                     </div>

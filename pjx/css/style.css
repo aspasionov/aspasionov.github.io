@@ -1092,7 +1092,7 @@ select option {
   outline: none;
 }
 
-.hidden-device {
+.hidden-block {
   display: block;
 }
 
@@ -1364,6 +1364,10 @@ select option {
 }
 
 .sticky {
+  padding: 80px 0px 0px;
+}
+
+.sticky .header {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
   -webkit-animation-duration: 0.3s;
@@ -1405,7 +1409,7 @@ select option {
   padding: 40px 0px 40px;
   background-color: #6318bf;
   color: #fff;
-  min-height: 500px;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1445,7 +1449,7 @@ select option {
 
 /* - connect -------- */
 .connect {
-  padding: 40px 0px;
+  padding: 60px 0px 40px;
   background-color: #f5fcfe;
 }
 
@@ -1453,10 +1457,13 @@ select option {
   display: block;
 }
 
+.connect__link:focus {
+  outline: none;
+}
+
 .connect__img {
   text-align: center;
   position: relative;
-  margin-bottom: 30px;
 }
 
 .connect__img img {
@@ -1516,7 +1523,7 @@ select option {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: -10px;
+  bottom: -40px;
 }
 
 .connect .slick-dots .slick-active {
@@ -1546,7 +1553,7 @@ select option {
 
 /* - virtues -------- */
 .virtues {
-  padding: 40px 0px;
+  padding: 60px 0px 40px;
   text-align: center;
 }
 
@@ -1596,7 +1603,7 @@ select option {
 
 /* - server -------- */
 .server {
-  padding: 40px 0px;
+  padding: 40px 0px 60px;
 }
 
 .server__img {
@@ -1732,7 +1739,7 @@ select option {
 /* - pricing -------- */
 .pricing {
   text-align: center;
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 
 .pricing__subtitle {
@@ -1748,7 +1755,7 @@ select option {
   display: block;
   cursor: pointer;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .pricing__checkbox {
@@ -1864,14 +1871,14 @@ select option {
 }
 
 .pricing__summ {
-  padding: 10px 5px;
+  padding: 10px 10px 10px 0px;
   text-align: right;
   width: 30%;
   max-width: 140px;
 }
 
 .pricing__result {
-  padding: 10px 5px;
+  padding: 10px 2px 10px 10px;
   text-align: left;
   width: 30%;
   max-width: 140px;
@@ -1893,7 +1900,7 @@ select option {
 }
 
 .pricing__list-title {
-  display: block;
+  display: none;
   text-align: right;
 }
 
@@ -1906,16 +1913,61 @@ select option {
   color: #222222;
 }
 
+.pricing__list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .pricing__list-item {
+  position: relative;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
+}
+
+.pricing__list-item .check-icon {
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 15px;
+  margin: -7px 0 0 -9px;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.pricing__list-item .check {
+  width: 18px;
+  height: 15px;
+  position: relative;
+  padding: 0px;
+}
+
+.pricing__list-item span {
+  padding-right: 18px;
+}
+
+.pricing .check-hidden .check-icon {
+  background: none;
 }
 
 .pricing__footer {
@@ -2002,7 +2054,7 @@ select option {
 /* - blog -------- */
 .blog {
   text-align: center;
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 
 .blog__title {
@@ -2123,7 +2175,8 @@ select option {
 }
 
 .footer__item {
-  width: 100%;
+  width: 240px;
+  margin: 0px auto 30px;
   text-align: left;
 }
 
@@ -2277,8 +2330,14 @@ select option {
 }
 
 @media only screen and (min-width: 600px) {
+  .hidden-block {
+    display: none;
+  }
   .burger-menu {
     top: 29px;
+  }
+  .sticky {
+    padding: 95px 0px 0px;
   }
   .header {
     padding: 5px 0px;
@@ -2286,9 +2345,6 @@ select option {
   }
   .header .logo {
     max-width: 150px;
-  }
-  .clone {
-    top: -95px;
   }
   .connect .slide-arrow {
     display: block;
@@ -2377,9 +2433,6 @@ select option {
     font-size: 18px;
     margin: 0px 0px 30px;
   }
-  .hidden-device {
-    display: none;
-  }
   .text-box p {
     font-size: 18px;
     line-height: 30px;
@@ -2394,37 +2447,23 @@ select option {
   }
   .banner {
     text-align: left;
-    padding: 60px 0px;
   }
   .banner__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    position: relative;
   }
   .banner__img {
-    margin-right: -15px;
-    height: 380px;
-    width: 30%;
-    background: url("../img/banner-image.png") no-repeat 40px 80px;
-    background-size: 320px;
-    position: relative;
+    position: absolute;
+    right: -90px;
+    height: 400px;
+    width: 450px;
+    background: url("../img/banner-image.png") no-repeat 50% 50%;
+    background-size: 100% auto;
     display: inline-block;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   .banner__text {
     width: 70%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    max-width: 500px;
+    position: relative;
+    z-index: 1;
   }
   .banner__text-buttons {
     -webkit-box-pack: start;
@@ -2536,6 +2575,9 @@ select option {
 }
 
 @media only screen and (min-width: 1000px) {
+  .hidden-block {
+    display: block;
+  }
   .hidden-device {
     display: block;
   }
@@ -2584,6 +2626,10 @@ select option {
   .menu-open-wrapper .reference, .menu-open-wrapper .contact {
     display: none;
   }
+  .menu-burger--opened .menu-open-wrapper {
+    max-width: none;
+    width: auto;
+  }
   .burger-menu {
     display: none;
   }
@@ -2620,15 +2666,15 @@ select option {
     text-decoration: underline;
     color: #fe5e66;
   }
+  .sticky {
+    padding: 119px 0px 0px;
+  }
   .header {
     height: 119px;
     padding: 5px 0px;
   }
   .header .logo {
     max-width: 196px;
-  }
-  .clone {
-    top: -119px;
   }
   .banner {
     min-height: 760px;
@@ -2638,18 +2684,11 @@ select option {
             align-items: center;
   }
   .banner__img {
-    margin-top: -60px;
-    margin-bottom: -180px;
-    margin-right: -200px;
+    top: -150px;
     height: 792px;
-    width: 600px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    width: 700px;
     background-size: 100%;
     background-position: 50% 50%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   .banner__text {
     width: 70%;
@@ -2778,7 +2817,7 @@ select option {
   }
   .pricing__list-title {
     display: block;
-    width: 210px;
+    width: 180px;
     padding: 15px 30px 10px 30px;
     text-align: left;
     margin-left: auto;
@@ -2793,23 +2832,50 @@ select option {
     margin-left: 0px;
   }
   .pricing__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: auto;
-    text-align: left;
-    margin-bottom: 0px;
     margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .pricing__list-item .check-icon {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 15px;
+    margin: -7px 0 0 -9px;
+    background-image: url("../img/check.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
   .pricing__list-item span {
-    padding: 17px 0px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-right: 0px;
   }
   .pricing__list-item .check {
-    padding: 17px 30px;
-    margin-left: 30px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    position: relative;
+    padding: 24px 30px;
+    margin-left: 20px;
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef;
     display: block;
-    width: 210px;
+    width: 180px;
+  }
+  .pricing__list-item .check-hidden .check-icon {
+    background: none;
   }
   .pricing__list-item:last-child .check {
+    padding-bottom: 19px;
     border-bottom: 1px solid #efefef;
   }
   .pricing__mounth {
@@ -2906,6 +2972,13 @@ select option {
   .pricing {
     padding: 130px 0px 90px;
   }
+  .pricing__list-title {
+    width: 210px;
+  }
+  .pricing__list-item .check {
+    margin-left: 30px;
+    width: 210px;
+  }
   .partners {
     padding: 100px 0px 110px;
   }
@@ -2928,8 +3001,8 @@ select option {
     width: auto;
   }
   .banner__img {
-    margin-bottom: -200px;
-    margin-right: -200px;
+    top: -100px;
+    right: -150px;
     height: 700px;
     width: 792px;
   }

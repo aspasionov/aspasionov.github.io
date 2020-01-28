@@ -48,21 +48,30 @@ $(function(){
     });
   //header
   $(window).scroll(function() {
-  if ($(this).scrollTop() > ($('.header').height() + 100)){  
+  if ($(this).scrollTop() > $('.header').height()){  
     $('.fixed-panel-nav').addClass("sticky");
   }
   else{
     $('.fixed-panel-nav').removeClass("sticky");
   }
   });
+  // price checkboxes
+  var priceBlock = document.querySelector('.pricing__wrap');
+
+  priceBlock.addEventListener('change', function (event) {
+    var input = event.target;
+
+    if (input.dataset.allChecked) {
+      this.querySelectorAll('.check-hidden').forEach(function (item) {
+        item.classList.remove('check-hidden');
+      });
+      return;
+    }
+
+    this.querySelectorAll('.check[data-hidden]').forEach(function (item) {
+      item.classList.add('check-hidden');
+    });
+  });
 });
-//radio
-let radio = document.querySelectorAll('.pricing__item-bonus');
-let check = document.querySelectorAll('.pricing__list-item .check img');
-for(let i = 0;i < radio.length; i++) {
-  radio[i].addEventListener('click' , function(ev) {
-    for(let x = 0;x < check.length; x++)
-        check[x].style.display = "block";
-})
-};
+
 
