@@ -35,7 +35,7 @@ $(function(){
         settings: {
         arrows: true,
         dots: false
-      }
+        }
       }
     ]
   });
@@ -140,15 +140,14 @@ $(function(){
     ]
   });
   //fullpage
-      $('#wrapper').fullpage({
-      //autoScrolling: true,
+    $('#wrapper').fullpage({
       fixedElements: '.header-fixed, .fixed-aside',
       scrollingSpeed: 900,
       responsiveWidth: 1000,
       verticalCentered: true,
       anchors:['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7'],
       navigation: true,
-      navigationPosition: 'left',
+      navigationPosition: 'left'
     });
 
 
@@ -178,10 +177,9 @@ $(function(){
     .addClass('visible')
     .eq($(this).index()).siblings(".fabrication-box").removeClass('visible');
 });
-
-  // $('.fabrication-tabs').on('click', 'li:not(.current)', function() {
-  //   $('.fabrication__slider').slick('refresh');
-  // });
+ $('.fabrication-tabs').on('click', 'li:not(.current)', function() {
+    $('.fabrication-box.visible .fabrication__slider').slick('refresh');
+ });
 //magnific-popup
   $('.open-video-in-modal').magnificPopup({
     type: 'iframe'
