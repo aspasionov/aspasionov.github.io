@@ -90,7 +90,7 @@ $(function(){
   });
  
   //fabrication__slider
-  $('.fabrication__slider').slick({
+    $('.fabrication__slider').slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -118,6 +118,7 @@ $(function(){
       }
     ]
   });
+  
   //review__slider
   $('.review__slider').slick({
     slidesToShow: 1,
@@ -208,6 +209,17 @@ $(function(){
 
   $('.open-modal').magnificPopup();
 
+  $('.open-modal-info').magnificPopup({
+    callbacks: {
+      beforeOpen: function() {
+          moreText();
+      },
+      beforeClose: function() {
+        $('.info-modal__txt').removeClass('opener');
+      },
+    }
+  });
+
 
   $('.project-box.visible .open-img-in-modal').magnificPopup({
     type: 'image',
@@ -230,9 +242,11 @@ $("a.scrollto").click(function () {
     return false;
 });
 //show-more-text-in modal
+  function moreText() {
    $('.more-btn').click( function() {
       $('.info-modal__txt').addClass('opener');
       $(this).hide();
   });
+ };
 });
 

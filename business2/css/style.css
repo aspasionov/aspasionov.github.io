@@ -2349,6 +2349,12 @@ a:focus {
   margin-bottom: 20px;
 }
 
+.fabrication__slider-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .fabrication__slider .slick-dots {
   text-align: center;
   margin-top: 15px;
