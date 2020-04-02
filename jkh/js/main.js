@@ -96,7 +96,7 @@ $(document).ready(function () {
     return elementsString;
   }
 
-//scroll up
+//flow scroll 
 $("a.scrollto").click(function () {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
