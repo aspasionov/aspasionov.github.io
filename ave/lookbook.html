@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header-top">
+        <div class="container container--sm">
+          <div class="header-top__inner">
+            <div class="header-top__currency">
+              <span class="header-top__currency-txt">Currency:</span>
+              <select name="" id="">
+                <option value="">GBP</option>
+                <option value="">UAH</option>
+                <option value="">RUB</option>
+              </select>
+            </div>
+            <div class="header-top__user">
+              <a href="#" class="header-top__user-link">Register</a>
+              <a href="#" class="header-top__user-link">Sign In</a>
+            </div>
+            <div class="header-top__cart">
+              <div class="header-top__cart-title">
+                <i class="fas fa-shopping-cart"></i>
+                <span>empty</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="header-top__cart-dropdown">
+                <li class="header-top__cart-item">
+                  <a href="#" class="header-top__cart-link">empty</a>
+                </li>
+                <li class="header-top__cart-item">
+                  <a href="#" class="header-top__cart-link">empty</a>
+                </li>
+                <li class="header-top__cart-item">
+                  <a href="#" class="header-top__cart-link">empty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-wrap header-menu-wrap--static">
+        <div class="container container--lg">
+          <div class="header-menu-wrap__inner">
+
+            <div class="logo">
+              <a href="#" class="logo__link"><span class="bold">avenue</span> fashion</a>
+            </div>
+            <div class="header-menu">
+            <div class="header-menu__icon">
+              <i class="fas fa-bars"></i>
+            </div>
+        </div>
+            <div class="header-menu__inner-fixed">
+            <div class="header-menu__inner">
+              <div class="header-menu__icon-close">
+                <i class="fas fa-times"></i>
+              </div>
+              <nav class="header-menu__nav">
+                <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">mens</a>
+                    <i class="fas fa-chevron-down"></i>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">womens</a>
+                    <i class="fas fa-chevron-down"></i>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">the brand</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">local stores</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">look book</a>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="header-menu__dropdown header-menu__dropdown--last">
+                      <div class="header-menu__dropdown-item">
+                        <span class="title title-h4">Our Lookbooks</span>
+                        <ul class="header-menu__dropdown-list">
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">Latest Posts (mixed)</a>
+                          </li>
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">Men’s Lookbook</a>
+                          </li>
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">Women’s Lookbook</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-menu__dropdown-item">
+                        <span class="title title-h4">Your Lookbooks</span>
+                        <ul class="header-menu__dropdown-list">
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">View and Edit</a>
+                          </li>
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">Share</a>
+                          </li>
+                          <li class="header-menu__dropdown-list-item">
+                            <a href="#" class="header-menu__dropdown-list-link">Delete</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header-menu__dropdown-sale">
+                        <div class="header-menu__dropdown-sale-title">
+                          <span class="bold">Autumn sale!</span><br>up to 50% off
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <form action="" class="search header-menu__search">
+                <div class="search__input"><input type="text" placeholder="Search.."></div>
+                <button class="search__btn"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__title title title-h1">
+            <span class="bold">our</span>
+             lookbook
+          </div>
+          <div class="intro__subtitle">Latest Posts - mens & womens</div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <!-- end header -->
+    <div id="middle">
+      <div class="product-grid">
+        <div class="container container--md">
+          <ul class="product-grid__filter filter">
+            <li class="filter__item">
+              <a href="#" class="filter__link">popular </a>
+            </li>
+            <li class="filter__item">
+              <a href="#" class="filter__link">new arrivals</a>
+            </li>
+            <li class="filter__item">
+              <a href="#" class="filter__link">best sellers</a>
+            </li>
+            <li class="filter__item">
+              <a href="#" class="filter__link">special offers</a>
+            </li>
+            <li class="filter__item">
+              <a href="#" class="filter__link">coming soon</a>
+            </li>
+          </ul>
+          <div class="product-grid__inner">
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img1.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img2.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img3.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img4.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img5.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img6.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item">
+              <div class="product-grid__img">
+                <img src="img/product-grid-img7.jpg" alt="">
+              </div>
+              <div class="product-grid__item-txt">
+                <sup>ref</sup>M1
+              </div>
+              <div class="product-grid__item-icons">
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-info"></i>
+                </a>
+                <a href="#" class="product-grid__item-icon">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-grid__item product-grid__item--descr product-grid__item--top">
+              <div class="product-grid__item-txt">
+                <span class="title title-h1">
+                  <span class="bold">Jane’s</span>
+                  lookbook
+                </span>
+                <div class="product-grid__item-subtitle">get the look for under £200!</div>
+                <p>We invited actress Jane Marshall to join us 
+                for the day and choose her perfect outfit from 
+                our vast range of womens fashion.
+                </p>
+                <p>
+                  This is of course not true as this is just a design 
+                  for a website and this is simply filler text.
+                 </p>
+                <button class="btn btn--border">view now</button>
+              </div>
+            </div>
+            <div class="product-grid__item product-grid__item--descr product-grid__item--bottom">
+                 <div class="product-grid__img-title">
+                   <span>Win</span><br>
+                   a new look
+                 </div>
+              <div class="product-grid__item-txt">
+                <span class="title title-h1">
+                  <span class="bold">Win</span>
+                  a new look!
+                </span>
+                <div class="product-grid__item-subtitle">add looks or items to your lookbook for a chance of winning </div>
+                <p>See an item or a complete look you like, click the  button to add it to your 
+                lookbook and you’ll be automatically entered to our monthly draw where 
+                one winner gets a <span class="bold">£300</span> gift voucher to spend on our website!  
+                </p>
+                <p>
+                  Terms: No purchase necessary. Vouchers are non-transferable and no 
+                  cash alternative is ofered. Competition is for members only.
+                  </p>
+                <button class="btn btn--border">Shop now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lookbook">
+        <div class="container container--lg">
+          <div class="lookbook__inner">
+            <div class="lookbook__item">
+              <div class="lookbook__item-img">
+                <img src="img/lookbook-img1.png" alt="">
+              </div>
+              <div class="lookbook__item-txt">
+                <span class="lookbook__item-title title title--h1">
+                  <span class="bold">men’s</span><br>lookbook
+                </span>
+                <p class="lookbook__item-descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
+                Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+                <button class="lookbook__btn btn btn--border">view now</button>
+              </div>
+            </div>
+            <div class="lookbook__item">
+              <div class="lookbook__item-img">
+                <img src="img/lookbook-img2.png" alt="">
+              </div>
+              <div class="lookbook__item-txt">
+                <span class="lookbook__item-title title title--h1">
+                  <span class="bold">women’s</span><br>lookbook
+                </span>
+                <p class="lookbook__item-descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
+                Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+                <button class="lookbook__btn btn btn--border">view now</button>
+              </div>
+            </div>
+            <div class="lookbook__item">
+              <div class="lookbook__item-img">
+                <img src="img/lookbook-img3.png" alt="">
+              </div>
+              <div class="lookbook__item-txt">
+                <span class="lookbook__item-title title title--h1">
+                  <span class="bold">your</span><br>lookbook
+                </span>
+                <p class="lookbook__item-descr">See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.
+                It’s like your own boutique!</p>
+                <button class="lookbook__btn btn btn--border">view now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- #middle-->
+  </div><!-- #wrapper -->
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="footer__content">
+    <div class="container container--sm">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <span class="title title-h3">Information</span>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">The brand</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Local stores</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Customer service</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Privacy & cookies</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Site map</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <span class="title title-h3">Why buy from us</span>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Shipping & returns</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Secure shopping</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Testimonials</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Award winning</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Ethical trading</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item hidden-mobile">
+          <span class="title title-h3">Your account</span>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Sign in</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Register</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">View cart</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">View your lookbook</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Track an order</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Update information</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item hidden-mobile">
+          <span class="title title-h3">Lookbook</span>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Latest posts</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Men’s lookbook</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Women’s lookbook</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Lookbooks RSS feed</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">View your lookbook</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Delete your lookbook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <span class="title title-h3">contact details</span>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              Head Office: Avenue Fashion, <br>
+180-182 Regent Street, London.
+            </li>
+            <li class="footer__list-item">Telephone:
+              <a href="tel: 0123-456-789" class="footer__list-link"> 0123-456-789 </a>
+            </li>
+            <li class="footer__list-item">
+              Email:
+              <a href="#" class="footer__list-link">support@yourwebsite.com</a>
+            </li>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__honor">
+          <div class="footer__honor-title">
+            <span class="bold">award winner
+          </span>fashion awards 2016
+          </div>
+        </div>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <span class="icon">
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <span class="icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <span class="icon">
+                <i class="fab fa-pinterest"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="copyright">
+      <div class="container container--sm">
+        <div class="copyright__inner">
+          <div class="copyright__txt">© 2016 Avenue Fashion™      </div>
+          <div class="copyright__links">
+            <a href="#" class="copyright__link">Design by RobbyDesigns.com</a>
+            <a href="#" class="copyright__link">Dev by Loremipsum.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
