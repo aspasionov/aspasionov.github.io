@@ -1789,11 +1789,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 70px;
           flex: 1 0 70px;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
 .header__tel {
-  margin-right: 18px;
+  margin-right: 5px;
 }
 
 .logo .icon {
@@ -1828,6 +1828,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-family: "Circe-ExtraBold", Arial, sans-serif;
   color: #202022;
+}
+
+.tel__number {
+  display: none;
+}
+
+.tel .icon {
+  width: 24px;
+  height: 22px;
+  fill: #202022;
 }
 
 .cart .icon {
@@ -1996,6 +2006,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .open-menu .menu__inner-fixed {
   left: 0px;
+}
+
+@media only screen and (min-width: 375px) {
+  .header__tel {
+    margin-right: 18px;
+  }
+  .tel .icon {
+    display: none;
+  }
+  .tel__number {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
