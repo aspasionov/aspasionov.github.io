@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+
+
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__inner">
+      <div class="header__logo logo">
+        <a href="#" class="logo__link">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#logo">
+          </svg>
+        </a>
+        <div class="logo__descr">
+          Дизайнерская мебель 
+          из Италии
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu__icon">
+          <span></span>
+        </div>
+        <div class="menu__inner-fixed">
+        <div class="menu__inner">
+          <div class="menu__close">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#close-icon">
+            </svg>
+          </div>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Фабрики</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+      </div>
+      <a class="header__tel tel" href="tel: 8 800 655 33 44">
+        8 800 655 33 44
+      </a>
+      <div class="header__cart cart">
+        <a href="cart.html" class="cart__link">
+          <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#cart">
+          </svg>
+          <span href="#" class="cart__text">Корзина</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <div id="middle">
+  <div class="pagination section">
+    <div class="container">
+      <span class="title title-h2">pagination</span>
+      <div class="pagination__inner">
+        <div class="pagination__txt">Страницы</div>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--active"><a href="#" class="pagination__link">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+        </ul>
+        <div class="pagination__arrows">
+          <div class="pagination__arrow">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#icon-prev">
+            </svg>
+          </div>
+          <div class="pagination__arrow pagination__arrow--active">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#icon-next">
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <span class="title title-h2">buttons</span>
+      <a href="#" class="btn">btn</a>
+      <a href="#" class="btn btn--danger">btn--danger</a>
+      <a href="#" class="btn btn--success">btn--success</a>
+      <a href="#" class="btn btn--attention">btn--attention</a>
+      <br><br>
+      <a href="#" class="btn btn--border">btn-border</a>
+      <a href="#" class="btn btn--danger btn--border">btn--danger-border</a>
+      <a href="#" class="btn btn--success btn--border">btn--success-border</a>
+      <a href="#" class="btn btn--attention btn--border">btn--attention-border</a>
+      <br><br>
+      <a href="`" class="btn btn--min-w">btn--min-w</a>
+      <a href="#" class="btn btn--max-w">btn--max-w</a>
+      <br>
+      <br>
+      <a href="#" class="btn btn--full-w">btn--full-w</a>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <h2>Form</h2>
+      <h4>radio and checkbox</h4>
+      <div class="radio-wrap">
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="radio__text">radio</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="radio__text">radio</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="radio__text">radio</span>
+        </label>
+      </div>
+      <div class="checkbox-wrap">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__text">checkbox</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__text">checkbox</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__text">checkbox</span>
+        </label>
+      </div>
+      <h4>Number</h4>
+      <input type="number" class="number" min="0" max="15" value="1">
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <h2>blocks</h2>
+      <h4>category</h4>
+      <div class="category-wrap">
+        <div class="category">
+          <div class="category__item active">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon1">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon2">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon3">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon4">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon5">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon6">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon7">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon4">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon3">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon2">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category__item-icon">
+              <svg class="icon">
+                <use xlink:href="img/svg/sprite.svg#category-icon1">
+              </svg>
+            </div>
+            <div class="category__title">
+              Кухни
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>form-cart</h4>
+      <form class="form" action="">
+        <p>Чтобы оформить заказ, заполните форму ниже и наш менеджер свяжется с Вами в течении 24 часов</p>
+        <div class="form__input">
+          <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="form__input">
+          <input type="tel" placeholder="Телефон">
+        </div>
+        <button class="form__btn btn  btn--full-w">Оформить заказ</button>
+        <div class="form__checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkbox__text">Согласен на обработку персональных данных</span>
+        </label>
+        </div>
+      </form>
+      <h4>cart-item</h4>
+      <div class="cart-item">
+        <div class="cart-item__img">
+          <img src="img/cart-img.jpg" alt="">
+        </div>
+        <div class="cart-item__content">
+          <div class="cart-item__descr">
+            <h5>Castanea<span>G&F Cucine</span></h5>
+            <div class="cart-item__price">
+              от 500 000 руб
+            </div>
+          </div>
+          <div class="cart-item__number">
+             <input type="number" class="number" min="0" max="15" value="1">
+          </div>
+          <div class="cart-item__close">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#close-icon">
+            </svg>
+          </div>
+        </div>
+      </div>
+      <h4>product-item</h4>
+      <div class="product-item">
+        <div class="product-item__img">
+          <img src="img/product-img.jpg" alt="">
+        </div>
+        <div class="product-item__footer">
+          <div class="product-item__descr">
+            <h5>Castanea<span>G&F Cucine</span></h5>
+            <div class="product-item__price">от 500 000 руб</div>
+          </div>
+          <div class="product-item__cart">
+            <svg class="icon">
+              <use xlink:href="img/svg/sprite.svg#cart">
+            </svg>
+          </div>
+        </div>
+      </div>
+      <h4>title-bl</h4>
+      <div class="title-bl">
+        <h2>Фабрики</h2>
+      </div>
+      <h4>fabric-list</h4>
+      <div class="fabric">
+        <div class="fabric__item">
+        <div class="fabric__letter">A</div>
+        <div class="fabric__row">
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="fabric__item">
+        <div class="fabric__letter">b</div>
+        <div class="fabric__row">
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="fabric__item">
+        <div class="fabric__letter">c</div>
+        <div class="fabric__row">
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+          <ul class="fabric__list">
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+            <li class="fabric__list-item">
+              <a href="#" class="fabric__list-link">Arredo 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="text-bl">
+        <h2>Lorem ipsum </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+      </div>
+      <div class="text-bl text--center">
+        <h3>h3 text center</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+      </div>
+      <div class="text-bl text--right">
+        <h4>h4 text right</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+      </div>
+      <div class="text-bl text--uppercase">
+        <h5>h5 text uppercase</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+      </div>
+      <div class="text-bl">
+        <h2>text two column</h2>
+        <div class="text-bl-grid">
+          <div class="text-bl__col">
+            <h2>Lorem ipsum dolor </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+          </div>
+          <div class="text-bl__col">
+            <h2>Lorem ipsum dolor </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nam fuga, quidem provident, tempore dolore obcaecati alias dolor illo, ab veniam repudiandae voluptates saepe vitae dolorum impedit enim ex sunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!-- #middle-->
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer__inner">
+        <span class="footer__copy">2017 Irice. Все права защищены</span>
+        <a class="footer__policy" href="#">Политика конфиденциальности</a>
+      <div class="footer__logo-wrap">
+        <span class="footer__logo-txt">Разработано</span>
+        <div class="footer__logo">
+          <svg class="icon">
+            <use xlink:href="img/svg/sprite.svg#footer-logo" >
+          </svg>
+        </div>
+      </div> 
+    </div>
+  </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
