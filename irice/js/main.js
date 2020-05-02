@@ -1,6 +1,6 @@
 $(function(){
   // $('input[placeholder], textarea[placeholder]').placeholder();
-  // $(".mask-phone").mask("+7 (999) 999-99-99");
+  $(".mask-phone").mask("+7 (999) 999-99-99");
 
   // add-open-class
   $('.menu__icon').on('click', function() {
