@@ -7145,7 +7145,7 @@ body {
     bottom: 0px;
     width: 7px;
     height: 52px;
-    background: url("../../img/line1/line-2__center.png") no-repeat 0px 0px;
+    background: url("../img/line1/line-2__center.png") no-repeat 0px 0px;
   }
   .home__arrow-left {
     position: absolute;
@@ -7153,7 +7153,7 @@ body {
     right: 52px;
     width: 0px;
     height: 24px;
-    background: url("../../img/line1/line-2__left.png") no-repeat 0px 0px;
+    background: url("../img/line1/line-2__left.png") no-repeat 0px 0px;
   }
   .home__arrow-right {
     position: absolute;
@@ -7161,14 +7161,14 @@ body {
     top: 15px;
     width: 0px;
     height: 29px;
-    background: url("../../img/line1/line-2__right.png") no-repeat 0 0;
+    background: url("../img/line1/line-2__right.png") no-repeat 0 0;
   }
   .home__img-wave {
     display: block;
     position: absolute;
     height: 135px;
     width: 9px;
-    background: url("../../img/line1/yellow-wave.svg") no-repeat 0 0;
+    background: url("../img/line1/yellow-wave.svg") no-repeat 0 0;
     -webkit-animation: wave-up 3s infinite 0s;
             animation: wave-up 3s infinite 0s;
   }
