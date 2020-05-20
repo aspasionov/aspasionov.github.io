@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form-wrapper">
+    <div class="form-top">
+      <div class="logo">
+          <a href="preview.html">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+      </div>
+      <div class="form__close">
+    </div>
+    </div>
+    <form action="" class="form">
+      <h2 class="form__title">Остались вопросы?</h2>
+      <p class="form__descr">Оставьте ваш номер телефона и наши специалисты бесплатно подготовят индивидуальный проект для вашего дома.</p>
+      <div class="form-group">
+        <label class="field-item field-item--inline">
+         <div class="field-item__label">Имя</div>
+         <div class="field-item__field">
+          <input type="tel" />
+        </div>
+        </label>
+      </div>
+        <div class="form-group">
+      <label class="field-item field-item--inline field-item--error">
+       <div class="field-item__label">Телефон</div>
+      <div class="field-item__field">
+        <input type="tel" placeholder="+7" required="required" />
+        </div>
+        </label>
+      <div class="field-text-error">Такого телефона не существует</div>
+    </div>
+    <div class="form__bottom">
+      <button class="form__btn btn btn--border">Задать вопрос</button>
+      <div class="form__bottom-text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</div>
+    </div>
+    </form>
+  </div>
+  <div id="wrapper">
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="preview.html">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <a href="tel:8 (800) 707-90-46" class="tel hidden-mobile header__tel">8 (800) 707-90-46</a>
+        <button class="header__btn btn btn--border hidden-mobile open-form">
+          Задать вопрос
+        </button>
+        <div class="lang header__lang">
+          <a class="en" href="#">En</a>
+          <a class="ru" href="#">Ru</a>
+        </div>
+        <div class="head-menu">
+          <div class="burger-menu">
+            <div class="burger-menu-box">
+              <div class="burger-menu-inner"></div>
+            </div>
+          </div>
+          <div class="menu-wrapper-fixed">
+            <div class="menu-open-wrapper">
+              <div class="menu-top">
+                <div class="lang lang-en">
+                  <a class="en" href="#">En</a>
+                  <a class="ru" href="#">Ru</a>
+                </div>
+                <a href="tel: 8 (800) 707-90-46" class="tel">8 (800) 707-90-46</a>
+                <div class="icon-close">
+                  <img src="img/x.svg" alt="">
+                </div>
+              </div>
+              <nav class="header-nav">
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Характеристики</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Солнечная станция</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Проекты</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">О компании</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Адреса шоу-румов</a>
+                  </li>
+                </ul>
+                <ul class="menu hidden-desktop">
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Реквизиты</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">FAQ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Гарантия</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Инструкция</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Сервис и обслуживание</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Дилеры</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="text--center menu__btn-wrap">
+                <button class="btn btn--border open-form">
+                  Задать вопрос
+                </button>
+              </div>
+              <div class="menu__social social">
+                <a href="#" class="social__item vk"></a>
+                <a href="#" class="social__item fb"></a>
+                <a href="#" class="social__item youtube"></a>
+                <a href="#" class="social__item telegram"></a>
+                <a href="#" class="social__item inst"></a>
+              </div>
+              <div class="adress-wrap">
+                <p>ул.Серпуховская 37, литер Б Санкт-Петербург 190013, Российская Федерация</p>
+                <a href="#" class="map-link">На карте</a>
+              </div>
+              <div class="menu__footer">
+                <a href="#" class="mail">office@voltsbattery.com </a>
+                <a href="tel:8 (800) 707-90-46" class="menu__tel tel">8 (800) 707-90-46</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- end header -->
+    <div id="middle">
+      <section class="banner">
+        <div class="banner__video-wrap">
+          <video src="video/Octagon - 5192.mp4" class="banner__video-bg" autoplay muted loop></video>
+        </div>
+        <div class="container">
+          <div class="banner__box">
+            <div class="banner__subtitle">Накопитель электроэнергии для дома</div>
+            <h1>Резервирование</h1>
+            <a href="#" class="banner__video">
+            </a>
+          </div>
+          <div class="banner__bottom">
+            <div class="banner__brend">
+              <div class="banner__brend-title">О нас пишут</div>
+              <div class="banner__brend-items">
+                <a href="#" class="banner__brend-item">
+                  <img src="img/brend-img1.svg" alt="">
+                </a>
+                <a href="#" class="banner__brend-item">
+                  <img src="img/brend-img2.svg" alt="">
+                </a>
+                <a href="#" class="banner__brend-item">
+                  <img src="img/brend-img3.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="banner__social social">
+              <a href="#" class="social__item vk"></a>
+              <a href="#" class="social__item fb"></a>
+              <a href="#" class="social__item youtube"></a>
+              <a href="#" class="social__item telegram"></a>
+              <a href="#" class="social__item inst"></a>
+            </div>
+          </div>
+      </section>
+      <section class="connect">
+        <div class="container">
+          <div class="connect-top">
+            <div class="connect__txt">
+              <h2>Как VOLTS подключается к дому</h2>
+              <p>быстрое подключение к распределительному щиту дома.
+                Не требует модернизации существующего электропитания</p>
+            </div>
+            <div class="connect__img wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="50">
+              <img src="img/connect-img.svg" alt="">
+            </div>
+          </div>
+          <div class="connect__items">
+            <div class="connect__items-line">
+              <svg width="838" height="188" viewBox="0 0 838 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="animate__animated animate__delay-1s animate__fadeIn" cx="7.5" cy="180.5" r="7.5" fill="#0094FF"/>
+              <circle class="animate__animated animate__delay-2s animate__fadeIn" cx="322.5" cy="180.5" r="7.5" fill="#0094FF"/>
+              <circle class="animate__animated animate__delay-4s animate__fadeIn" cx="830.5" cy="96.5" r="7.5" fill="#0094FF"/>
+              <path class="connect-line" d="M11.5 180.5H810C821.046 180.5 830 171.546 830 160.5V2.5M830 2.5L836 8.5M830 2.5L824 8.5" stroke="#0094FF" stroke-width="3" stroke-linecap="round"/>
+              <circle class="animate__animated animate__delay-3s animate__fadeIn" cx="637.5" cy="180.5" r="7.5" fill="#0094FF"/>
+              </svg>
+            </div>
+            <div class="connect__item">
+              <div class="connect__item-img">
+                <img src="img/connect-item-img1.svg" alt="">
+              </div>
+              <div class="connect__item-txt">
+                Электросеть
+              </div>
+            </div>
+            <div class="connect__item">
+              <div class="connect__item-img">
+                <img src="img/connect-item-img2.svg" alt="">
+              </div>
+              <div class="connect__item-txt">
+                Входной счетчик электроэнергии
+              </div>
+            </div>
+            <div class="connect__item">
+              <div class="connect__item-img">
+                <img src="img/connect-item-img3.svg" alt="">
+              </div>
+              <div class="connect__item-txt">
+               Полная защита дома
+              </div>
+            </div>
+            <div class="connect__item connect__item--row">
+              <div class="connect__item-img">
+                <img src="img/connect-item-img4.svg" alt="">
+              </div>
+              <div class="connect__item-txt">
+                Распределительный электрощиток
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__title-bl">
+            <h2>Почему VOLTS</h2>
+            <p>Интеллектуальное управление через мобильное приложение, онлайн мониторинг, удалённое управление, статистика потребления энергии</p>
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__img wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+              <img src="img/advantages-img.svg" alt="">
+              <button class="icon"></button>
+            </div>
+            <ul class="advantages__list">
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">01</div>
+                <h3>Простота</h3>
+                <p>Отсутствие доп расходников
+                топливо, фильтры и т.д.</p>
+              </li>
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">02</div>
+                <h3>Компактность</h3>
+                <p>Не занимает много места  и не требует отдельного места</p>
+              </li>
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">03</div>
+                <h3>Бесшумность</h3>
+                <p>Не издаёт посторонних звуков во время работы</p>
+              </li>
+            </ul>
+            <ul class="advantages__list">
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">04</div>
+                <h3>Удобство</h3>
+                <p>Не нужно заводить вручную, пачкать руки и заправлять</p>
+              </li>
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">05</div>
+                <h3>Дизайн</h3>
+                <p>Вписывается в интерьер, множество вариантов исполнения</p>
+              </li>
+              <li class="advantages__list-item">
+                <div class="advantages__list-number">06</div>
+                <h3>Обслуживание</h3>
+                <p>Отсутствуют расходы на обслуживание</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="control">
+        <div class="container">
+          <div class="control__inner">
+            <div class="control__content">
+          <div class="control__title-bl">
+            <h2>Управляйте в один клик</h2>
+            <p>Интеллектуальное управление через мобильное приложение, онлайн мониторинг, удалённое управление, статистика потребления энергии</p>
+          </div>
+          <div class="control__items">
+            <div class="control__item">
+              <div class="control__item-icon">
+                <img src="img/control-icon1.svg" alt="">
+              </div>
+              <div class="control__item-text">
+                Онлайн-мониторинг
+              </div>
+            </div>
+            <div class="control__item">
+              <div class="control__item-icon">
+                <img src="img/control-icon1.svg" alt="">
+              </div>
+              <div class="control__item-text">
+                Онлайн-мониторинг
+              </div>
+            </div>
+            <div class="control__item">
+              <div class="control__item-icon">
+                <img src="img/control-icon1.svg" alt="">
+              </div>
+              <div class="control__item-text">
+                Онлайн-мониторинг
+              </div>
+            </div>
+            <div class="control__item">
+              <div class="control__item-icon">
+                <img src="img/control-icon1.svg" alt="">
+              </div>
+              <div class="control__item-text">
+                Онлайн-мониторинг
+              </div>
+            </div>
+          </div>
+            <div class="control__buttons">
+              <a href="#" class="control__btn">
+                <img src="img/control-btn.svg" alt="">
+              </a>
+              <a href="#" class="control__btn">
+                <img src="img/control-btn2.svg" alt="">
+              </a>
+            </div>
+          </div>
+            <picture class="control__img wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="200">
+              <source srcset="img/control-img-mob.svg" media="(max-width: 767px)">
+              <img src="img/control-img.svg" alt="phone">
+            </picture>
+          </div>
+          </div>
+      </section>
+      <section class="home">
+        <div class="container">
+          <div class="home__title-bl">
+            <h2><span>Независимое</span>
+            электропитание дома с VOLTS</h2>
+            <p>Накопитель интегрируется в электросеть дома вместе с солнечными панелями для хранения избыточной энергии днем и возможности ее использования в ночное время. </p>
+          </div>
+          <div class="home__slider">
+            <figure class="home__item">
+              <div class="home__item-img">
+                <img src="img/home-img1.jpg" alt="home-day">
+                <div class="home__img-wave home__img-wave--1"></div>
+                <div class="home__img-wave home__img-wave--2"></div>
+                <div class="home__img-wave home__img-wave--3"></div>
+                <div class="home__img-wave home__img-wave--4"></div>
+                <div class="home__arrows home__arrows--day">
+                  <div class="home__arrow-green">
+                  </div>
+                  <div class="home__arrow-blue">
+
+                  </div>
+                </div>
+              </div>
+              <figcaption class="home__item-descr">
+                <span class="icon-text icon-text--sun"><span>День</span></span>
+                поток энергии от солнечных панелей идет в накопитель и в дом
+              </figcaption>
+              </figure>
+              <figure class="home__item">
+              <div class="home__item-img">
+                <img src="img/home-img2.jpg" alt="home-night">
+                <div class="home__arrows home__arrows--night">
+                  <div class="home__arrow-left"></div>
+                  <div class="home__arrow-center"></div>
+                  <div class="home__arrow-right"></div>
+                </div>
+              </div>
+              <figcaption class="home__item-descr">
+                <span class="icon-text icon-text--moon">
+                  <span>Ночь</span>
+                </span>
+                поток энергии от солнечных панелей идет в накопитель и в дом
+              </figcaption>
+              </figure>
+            </div>
+        </div>
+      </section>
+      <section class="variant">
+        <div class="container">
+          <h2>Выберите свой вариант</h2>
+          <div class="soft-tabs-wrap group ">
+            <ul class="soft-tabs">
+              <li class="hoarder current">Только накопитель</li>
+              <li class="panel">Накопитель + солнечные панели</li>
+            </ul>
+            <div class="box-wrap">
+                <div class="variant__item variant__item--panel">
+                <div class="variant__item-head">
+                  <h3>Базовая</h3>
+                  <div class="variant__item-number">
+                    <span class="number">1</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      100-150 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      2 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--panel"></span>
+                      <span class="power">1 кВт</span> 6,4 м2
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/panel-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn">
+                  <span class="price">275 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+              <div class="variant__item variant__item--panel">
+                <div class="variant__item-head">
+                  <h3>Стандарт</h3>
+                  <div class="variant__item-number">
+                    <span class="number number--second">2</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      150-200 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      6 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--panel"></span>
+                      <span class="power">2 кВт</span> 12,8 м2
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/panel-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn variant__item-btn--blue">
+                  <span class="price">350 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+              <div class="variant__item variant__item--panel variant__item--last">
+                <div class="variant__item-head">
+                  <h3>Премиум</h3>
+                  <div class="variant__item-number">
+                    <span class="number number--third">3</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      200-250 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      12 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--panel"></span>
+                      <span class="power">4 кВт</span> 25,6 м2
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/panel-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn variant__item-btn--dark">
+                  <span class="price">500 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+              <div class="variant__item variant__item--hoarder active">
+                <div class="variant__item-head">
+                  <h3>Базовая</h3>
+                  <div class="variant__item-number">
+                    <span class="number">1</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      100-150 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      2 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--clock"></span>
+                      резервирование 3-4 часа
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/variant-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn">
+                  <span class="price">275 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+              <div class="variant__item variant__item--hoarder active">
+                <div class="variant__item-head">
+                  <h3>Стандарт</h3>
+                  <div class="variant__item-number">
+                    <span class="number number--second">2</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      150-200 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      6 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--clock"></span>
+                      резервирование 6-7 часов
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/variant-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn variant__item-btn--blue">
+                  <span class="price">350 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+              <div class="variant__item variant__item--hoarder active variant__item--last">
+                <div class="variant__item-head">
+                  <h3>Премиум</h3>
+                  <div class="variant__item-number">
+                    <span class="number number--third">3</span>
+                    <span class="txt">модуль емкости</span>
+                  </div>
+                </div>
+                <div class="variant__item-content">
+                  <ul class="variant__list">
+                    <li class="variant__list-item">
+                      <span class="icon icon--home"></span>
+                      200-250 м2
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--battery"></span>
+                      12 кВт*ч
+                    </li>
+                    <li class="variant__list-item">
+                      <span class="icon icon--clock"></span>
+                      резервирование 9-10 часов
+                    </li>
+                  </ul>
+                  <div class="variant__img">
+                    <img src="img/variant-img.svg" alt="">
+                  </div>
+                </div>
+                <button class="variant__item-btn variant__item-btn--dark">
+                  <span class="price">500 000 р</span>
+                  <span class="text">Выбрать</span>
+                </button>
+              </div>
+            <div class="variant-attention">
+              <span class="variant-attention__icon">
+                
+              </span>
+              <p>указанная стоимость не включает стоимость доставки и установки. Окончательная расчет производится после более детального анализа места установки.</p>
+            </div>
+            <a href="#" class="variant-link">
+              <span>Примеры установки</span>
+            </a>
+          </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+    </div><!-- #middle-->
+  </div><!-- #wrapper -->
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <span class="title-site--h2">Footer</span>
+      <span class="copy">Design by Axe</span>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
