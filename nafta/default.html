@@ -20,29 +20,32 @@
       <div class="modal-content">
         <div class="modal-head">
           <span class="title-site title-site--h2">Sign in</span>
+          <p></p>
         </div>
 
         <div class="modal-body">
           <form class="st-form" action="#">
             <div class="form-group">
               <label class="field-item">
-                <div class="field-item__label">Login</div>
+                <div class="field-item__field">
+                  <input type="text" placeholder="Your name" required="required" />
+                </div>
+              </label>
+              <label class="field-item">
+                <div class="field-item__field">
+                  <input type="text" placeholder="Your name" required="required" />
+                </div>
+              </label>
+              <label class="field-item">
                 <div class="field-item__field">
                   <input type="text" placeholder="Your name" required="required" />
                 </div>
               </label>
             </div>
-
-            <div class="form-group">
-              <label class="field-item">
-                <div class="field-item__label">Password</div>
-                <div class="field-item__field">
-                  <input type="password" placeholder="Your password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required="required" />
-                </div>
-              </label>
-            </div>
-
-            <button class="btn btn_md btn_max" type="submit">Send</button>
+             <a class="btn" href="#">
+                <span class="btn__icon btn__icon--left"></span>
+                <span class="btn__icon-text">Получить pdf</span>
+            </a>
           </form>
         </div>
 
@@ -339,38 +342,10 @@
             </div>
 
             <br><br><br>
-            <h4>Animation labels</h4>
-            <div class="form-group form-group--animate-js">
-              <label class="field-item">
-                <div class="field-item__label">label text</div>
-                <div class="field-item__field">
-                  <input type="text" required="required" />
-                </div>
-              </label>
-            </div>
-            <div class="form-group form-group--animate-js form-group--focused">
-              <label class="form-item">
-                <div class="field-item__label">What is your name?</div>
-                <div class="field-item__field">
-                  <input type="text" required="required"/>
-                </div>
-              </label>
-            </div>
-
-            <div class="form-group form-group--animate-js">
-              <label class="field-item">
-                <div class="field-item__label">password</div>
-                <div class="field-item__field">
-                  <input type="password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required="required" />
-                </div>
-              </label>
-            </div>
-            <br>
             <h4>Inline labels</h4>
             <br>
             <div class="form-group">
-              <label class="field-item field-item--inline">
-                <div class="field-item__label">E-mail</div>
+              <label class="field-item">
                 <div class="field-item__field">
                   <input type="email" placeholder="axe@gamil.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required="required"/>
                 </div>
@@ -378,8 +353,7 @@
             </div>
 
             <div class="form-group">
-              <label class="field-item field-item--inline">
-                <div class="field-item__label">Phone</div>
+              <label class="field-item">
                 <div class="field-item__field">
                   <input type="tel" placeholder="+3" required="required" />
                 </div>
@@ -392,7 +366,6 @@
             <div class="form-group-grid">
               <div class="form-group form-group--half-col">
                 <label class="field-item">
-                  <div class="field-item__label">Search</div>
                   <div class="field-item__field"><input type="search" placeholder="search" />
                   </div>
                 </label>
@@ -400,7 +373,6 @@
 
               <div class="form-group form-group--half-col">
                 <label class="field-item">
-                  <div class="field-item__label">Website</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="Website" required="required" />
                   </div>
@@ -411,7 +383,6 @@
             <div class="form-group-grid">
               <div class="form-group form-group--three-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -420,7 +391,6 @@
 
               <div class="form-group form-group--three-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -428,7 +398,6 @@
               </div>
 
               <div class="form-group form-group--three-col"><label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -439,7 +408,6 @@
             <div class="form-group-grid">
               <div class="form-group form-group--four-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -448,7 +416,6 @@
 
               <div class="form-group form-group--four-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -457,7 +424,6 @@
 
               <div class="form-group form-group--four-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -466,7 +432,6 @@
 
               <div class="form-group form-group--four-col">
                 <label class="field-item">
-                  <div class="field-item__label">label text</div>
                   <div class="field-item__field">
                     <input type="text" placeholder="placeholder text" required="required" />
                   </div>
@@ -586,11 +551,6 @@
     </svg>
   </a>
   <!-- footer -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <span class="copy">Design by Axe</span>
-    </div>
-  </footer>
   <!-- end footer -->
   <script src="js/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

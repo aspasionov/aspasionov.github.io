@@ -1492,19 +1492,16 @@ a:hover {
 }
 
 .btn__icon {
-  width: 20px;
-  height: 20px;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid #fff;
 }
 
 .btn__icon--right {
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .btn__icon--left {
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .btn--border {
@@ -1570,54 +1567,54 @@ a:hover {
 }
 
 .placeholder {
-  color: #37393a;
+  color: #2268A9;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #37393A;
+  color: #2268A9;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #37393A;
+  color: #2268A9;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #37393A;
+  color: #2268A9;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: #37393A;
+  color: #2268A9;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #37393A;
+  color: #2268A9;
 }
 
 .field-item__field input,
 .field-item__field textarea {
   position: relative;
-  height: 50px;
+  height: 30px;
   width: 100%;
-  padding: 0px 15px;
-  border: 1px solid rgba(68, 68, 68, 0.3);
-  font: 16px "GothamProRegular", Arial, sans-serif;
-  color: #444;
-  background-color: #fff;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 1px solid #2268A9;
+  font: 11px "GothamProRegular", Arial, sans-serif;
+  color: #2268A9;
+  background-color: transparent;
   outline: none;
-  border-radius: 3px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .field-item__field input:hover,
 .field-item__field textarea:hover {
-  border-color: rgba(68, 68, 68, 0.4);
+  border-color: #419EF4;
 }
 
 .field-item__field input:focus,
 .field-item__field textarea:focus {
-  border-color: rgba(68, 68, 68, 0.5);
+  border-color: #419EF4;
 }
 
 .field-item__field textarea {
@@ -1693,50 +1690,7 @@ textarea::placeholder {
 
 /* ----- Forms ------------------------- */
 .form-group {
-  margin-bottom: 30px;
-}
-
-.field-item__label {
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0B3954;
-}
-
-.form-group--animate-js {
-  position: relative;
-  padding-top: 20px;
-}
-
-.form-group--animate-js .field-item__label {
-  position: absolute;
-  z-index: 3;
-  left: 0px;
-  top: 20px;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-  padding: 0px 15px;
-  font-size: 16px;
-  line-height: 50px;
-  cursor: text;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  margin: 0;
-  color: #37393A;
-}
-
-.form-group--animate-js .field-item__field input.filled {
-  background-color: rgba(144, 238, 144, 0.2);
-}
-
-.form-group--focused .field-item__label {
-  -webkit-transform: translateY(-125%);
-      -ms-transform: translateY(-125%);
-          transform: translateY(-125%);
-  font-size: .75em;
-  line-height: 1;
+  margin-bottom: 25px;
 }
 
 /* Min width 740 pixels */
@@ -1757,25 +1711,14 @@ textarea::placeholder {
   .form-group--three-col {
     width: 31.3%;
   }
-  .field-item--inline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .field-item--inline .field-item__label {
+  .field-item .field-item__label {
     min-width: 140px;
     -ms-flex-preferred-size: 140px;
         flex-basis: 140px;
     margin-bottom: 0;
     margin-right: 10px;
   }
-  .field-item--inline .field-item__field {
+  .field-item .field-item__field {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -2080,7 +2023,7 @@ textarea::placeholder {
 
 .simple-modal {
   width: 100%;
-  max-width: 360px;
+  max-width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2090,8 +2033,8 @@ textarea::placeholder {
 }
 
 .modal-inner {
-  background-color: #fff;
-  padding: 25px;
+  background: #fff url("../img/modal-img-bg.png") no-repeat 100% 0;
+  padding: 40px 25px 25px 25px;
   position: relative;
 }
 
@@ -2102,6 +2045,26 @@ textarea::placeholder {
 .modal-head {
   padding-right: 30px;
   margin-bottom: 25px;
+  max-width: 90%;
+}
+
+.modal-head .title {
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  font-family: "GothamProBold";
+  margin-bottom: 7px;
+}
+
+.modal-head p {
+  font-size: 8px;
+  line-height: 14px;
+  color: #838383;
+}
+
+.modal-body .form-group > * + * {
+  display: block;
+  margin-top: 20px;
 }
 
 .button-up {
@@ -2165,6 +2128,14 @@ textarea::placeholder {
   background-color: #fff;
   max-width: 158px;
   height: 100%;
+  margin-left: -20px;
+}
+
+.logo a {
+  display: block;
+  outline: none;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2174,12 +2145,6 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: -20px;
-}
-
-.logo a {
-  display: block;
-  outline: none;
 }
 
 .logo a img {
@@ -2267,25 +2232,25 @@ textarea::placeholder {
     position: relative;
     top: 5px;
   }
-  .fp-viewing-0 .header {
+  .fp-viewing-banner .header {
     background-color: transparent;
   }
-  .fp-viewing-0 .header .menu-item {
+  .fp-viewing-banner .header .menu-item {
     color: #fff;
   }
-  .fp-viewing-0 .header .menu-item.active .menu-item__link {
+  .fp-viewing-banner .header .menu-item.active .menu-item__link {
     color: #fff;
   }
-  .fp-viewing-0 .header .menu-item__link:before {
+  .fp-viewing-banner .header .menu-item__link:before {
     background-color: #fff;
   }
-  .fp-viewing-0 .header .menu-item__link:hover {
+  .fp-viewing-banner .header .menu-item__link:hover {
     color: #fff;
   }
-  .fp-viewing-0 .header .contact__tel {
+  .fp-viewing-banner .header .contact__tel {
     color: #fff;
   }
-  .fp-viewing-0 .header .logo:after {
+  .fp-viewing-banner .header .logo:after {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), rgba(255, 255, 255, 0.3);
     background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
@@ -2340,6 +2305,7 @@ textarea::placeholder {
 }
 
 .footer-btn {
+  text-decoration: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 22px 10px;
@@ -2360,12 +2326,21 @@ textarea::placeholder {
   border: none;
   outline: none;
   max-width: 200px;
+  color: inherit;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .footer-btn__icon {
   margin-left: 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.footer-btn:hover {
+  background-color: #e6e6e6;
+  color: #232323;
 }
 
 .footer-catalog {
@@ -2383,6 +2358,9 @@ textarea::placeholder {
   text-decoration: none;
   color: #fff;
   background-color: #419EF4;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .footer-catalog__icon {
@@ -2404,11 +2382,14 @@ textarea::placeholder {
 }
 
 .footer-catalog:hover {
+  background-color: #1185f1;
   color: #fff;
 }
 
 .company-info {
   display: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 480px) {
@@ -2436,7 +2417,8 @@ textarea::placeholder {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: -2px;
+    top: -1px;
+    z-index: -1;
     background: rgba(35, 35, 35, 0.3);
   }
   .company-info {
@@ -2452,11 +2434,20 @@ textarea::placeholder {
     padding: 10px;
     background-color: #fff;
     width: 200px;
+    color: #232323;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
   }
   .company-info__icon {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin-left: 10px;
+  }
+  .company-info:hover {
+    text-decoration: none;
+    background-color: #e6e6e6;
+    color: #232323;
   }
   .footer-catalog,
   .footer-btn,
@@ -2553,7 +2544,7 @@ textarea::placeholder {
 .banner {
   position: relative;
   min-height: 460px;
-  background: url("../../img/banner-bg.jpg") no-repeat 50% 50%;
+  background: url("../img/banner-bg.jpg") no-repeat 50% 50%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2582,6 +2573,7 @@ textarea::placeholder {
 }
 
 .banner-slider .slick-dots li {
+  cursor: pointer;
   width: 6px;
   height: 6px;
   background-color: #C4C4C4;
@@ -2634,13 +2626,18 @@ textarea::placeholder {
     position: relative;
   }
   .banner-video__btn {
+    display: block;
     position: relative;
     z-index: 2;
     cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
   }
   .banner-video__descr {
     text-align: center;
     padding: 10px 40px;
+    font-size: 10px;
     line-height: 16px;
     color: #2B2B2B;
     background-color: #fff;
@@ -2648,6 +2645,11 @@ textarea::placeholder {
     position: absolute;
     top: 136px;
     left: -124px;
+  }
+  .banner-video:hover .banner-video__btn {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   .banner-slider {
     max-width: 65%;
@@ -2755,7 +2757,7 @@ textarea::placeholder {
     width: 100%;
   }
   .company-item__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -3127,6 +3129,8 @@ textarea::placeholder {
 
 .gallery-inner__img {
   border-bottom: 1px solid #fff;
+  display: block;
+  position: relative;
 }
 
 .gallery-inner__img img {
@@ -3134,6 +3138,15 @@ textarea::placeholder {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.gallery-inner__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 600px) {
@@ -3165,7 +3178,7 @@ textarea::placeholder {
 }
 
 .vacancies .clients {
-  background-image: url("../../img/vacancies-bg.jpg");
+  background-image: url("../img/vacancies-bg.jpg");
   background-position: 50% 0;
 }
 
@@ -3260,6 +3273,10 @@ textarea::placeholder {
   background-position: 100% 0;
 }
 
+.contact-bl.section-st {
+  padding-bottom: 0px;
+}
+
 .contact-inner .container {
   padding: 0px;
 }
@@ -3344,7 +3361,7 @@ textarea::placeholder {
     margin-top: 50px;
   }
   .contact-info {
-    min-height: 256px;
+    min-height: 257px;
     padding: 30px 40px;
   }
 }

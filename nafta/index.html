@@ -11,12 +11,54 @@
 </head>
 
 <body>
+  <div class="simple-modal mfp-hide" id="myModal">
+    <div class="modal-inner">
+      <div class="modal-content">
+        <div class="modal-head">
+          <span class="title">Хотите отправить заявку?</span>
+          <p>Заполните форму ниже и наш менеджер отправит pdf презентацию вам на почту:</p>
+        </div>
+
+        <div class="modal-body">
+          <form class="st-form" action="#">
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__field">
+                  <input type="text" placeholder="Ваше имя" required="required" />
+                </div>
+              </label>
+              <label class="field-item">
+                <div class="field-item__field">
+                  <input type="mail" placeholder="Ваша почта" required="required" />
+                </div>
+              </label>
+              <label class="field-item">
+                <div class="field-item__field">
+                  <input type="text" placeholder="Ваша компания:" required="required" />
+                </div>
+              </label>
+            </div>
+             <a class="btn btn--second-st" href="#">
+                <span class="btn__icon btn__icon--left">
+                  <svg class="icon claim-icon">
+                  <use xlink:href="img/svg/sprite.svg#claim-icon">
+                </svg>
+                </span>
+                <span class="btn__icon-text">Получить pdf</span>
+            </a>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
   <div id="wrapper">
     <!-- header -->
     <header class="header header-fixed" id="header">
       <div class="container">
-        <div class="logo">
-          <a href="preview.html">
+        <div data-anchor="banner" class="logo">
+          <a href="#banner">
             <img src="img/logo.png" alt="logo" />
           </a>
         </div>
@@ -37,19 +79,19 @@
               <nav class="header-nav">
                 <ul class="menu">
                   <li class="menu-item">
-                    <a href="#" class="menu-item__link">О компании</a>
+                    <a data-anchor="company" href="#company" class="menu-item__link">О компании</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-item__link">Услуги</a>
+                    <a data-anchor="service" href="#service" class="menu-item__link">Услуги</a>
                   </li>
                   <li class="menu-item active">
                     <a href="#" class="menu-item__link">Автопарк</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-item__link">Клиенты</a>
+                    <a data-anchor="client" href="#client" class="menu-item__link">Клиенты</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-item__link">Вакансии</a>
+                    <a data-anchor="vacancies" href="#vacancies" class="menu-item__link">Вакансии</a>
                   </li>
                 </ul>
                 <div class="contact">
@@ -63,7 +105,7 @@
       </div>
     </header>
     <!-- end header -->
-    <section class="section section-st banner">
+    <section class="section section-st banner fp-auto-height-responsive">
       <div class="container">
         <div class="banner-inner">
           <div class="banner-slider">
@@ -78,7 +120,7 @@
             </div>
           </div>
           <div class="banner-video">
-            <a href="#" class="banner-video__btn">
+            <a href="https://www.youtube.com/watch?v=jUfsakQwetA" class="banner-video__btn open-video">
               <img src="img/svg/video-button-icon.svg" alt="">
             </a>
             <div class="banner-video__descr">
@@ -87,26 +129,26 @@
           </div>
         </div>
       </div>
-      <div class="footer fixed-footer">
+      <div class="footer">
         <div class="container-lg">
           <div class="footer-inner">
-            <div class="company-info">
+            <a data-anchor="company" href="#company" class="company-info">
               <div class="company-info__text">О компании</div>
               <div class="company-info__icon">
                 <svg class="icon info-icon">
                   <use xlink:href="img/svg/sprite.svg#info-icon">
                 </svg>
               </div>
-            </div>
-            <button class="footer-btn">
+            </a>
+            <a href="https://www.youtube.com/watch?v=jUfsakQwetA" class="footer-btn open-video">
               <span class="footer-btn__text">Видео о производстве</span>
               <span class="footer-btn__icon">
                 <svg class="icon youtube-icon">
                   <use xlink:href="img/svg/sprite.svg#youtube-icon">
                 </svg>
               </span>
-            </button>
-            <a href="#" class="footer-catalog">
+            </a>
+            <a href="#myModal" class="footer-catalog open-modal">
               <span class="footer-catalog__icon">
                 <svg class="icon claim-icon">
                   <use xlink:href="img/svg/sprite.svg#claim-icon">
@@ -121,7 +163,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-st company">
+    <section class="section section-st company fp-auto-height-responsive">
       <div class="container">
         <div class="company-text">
           <span class="company-text__title title-site title-site--h1">о компании</span>
@@ -147,7 +189,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-st">
+    <section class="section section-st fp-auto-height-responsive">
       <div class="clients">
         <div class="container">
           <span class="clients__title title-site title-site--h1">нАШИ КЛИЕНТЫ</span>
@@ -185,7 +227,7 @@
         </div>
       </div>
     </section>
-    <section class="section-st section service">
+    <section class="section-st section service fp-auto-height-responsive">
       <div class="container">
         <span class="service__title title-site title-site--h1">что мы делаем:</span>
         <div class="service-items">
@@ -211,7 +253,7 @@
         </div>
       </div>
     </section>
-    <section class="section-st section review">
+    <section class="section-st section review fp-auto-height-responsive">
       <div class="container">
         <div class="review-inner">
           <span class="review__title title-site title-site--h1">Лабораторная проверка газа осуществляется каждые 6 месяцев</span>
@@ -226,7 +268,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-st advantages">
+    <section class="section section-st advantages fp-auto-height-responsive">
       <div class="container">
         <span class="advantages__title title-site title-site--h1">приемущества</span>
         <div class="advantages-items">
@@ -248,7 +290,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-st gallery">
+    <section class="section section-st gallery fp-auto-height-responsive">
       <div class="clients">
         <div class="container">
           <span class="clients__title title-site title-site--h1">Фотогалерея</span>
@@ -261,34 +303,40 @@
             <div class="gallery-inner__column">
               <div class="gallery-inner__img gallery-inner__img--lg">
                 <img src="img/photo-1.jpg" alt="">
+                <a href="img/photo-1.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
             </div>
             <div class="gallery-inner__column">
               <div class="gallery-inner__img">
                 <img src="img/photo-2.jpg" alt="">
+                <a href="img/photo-2.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
               <div class="gallery-inner__img">
                 <img src="img/photo-3.jpg" alt="">
+                <a href="img/photo-3.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
             </div>
             <div class="gallery-inner__column">
               <div class="gallery-inner__img gallery-inner__img--lg">
                 <img src="img/photo-4.jpg" alt="">
+                <a href="img/photo-4.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
             </div>
             <div class="gallery-inner__column">
               <div class="gallery-inner__img">
                 <img src="img/photo-5.jpg" alt="">
+                <a href="img/photo-5.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
               <div class="gallery-inner__img">
                 <img src="img/photo-6.jpg" alt="">
+                <a href="img/photo-6.jpg" class="gallery-inner__link open-img-in-modal"></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-st section vacancies">
+    <section class="section-st section vacancies fp-auto-height-responsive">
       <div class="clients">
         <div class="container">
           <span class="clients__title title-site title-site--h1">Вакансии</span>
@@ -320,7 +368,7 @@
         </div>
       </div>
     </section>
-    <section class="section-st section contact-bl">
+    <section class="section-st section contact-bl fp-auto-height-responsive">
       <div class="clients">
         <div class="container">
           <span class="clients__title title-site title-site--h1">контакты</span>
@@ -364,7 +412,7 @@
       </div>
       </div>
     </section>
-    <a class="message hidden-mobile" href="#">
+    <a class="message hidden-mobile open-modal" href="#myModal">
       <svg class="icon message-icon">
         <use xlink:href="img/svg/sprite.svg#message-icon">
       </svg>

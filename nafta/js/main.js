@@ -25,14 +25,24 @@ $(function(){
    }
   });
 
-  //tabs
-  $('ul.soft-tabs').on('click', 'li:not(.current)', function() {
-    $(this).addClass('current').siblings().removeClass('current')
-    .parents('div.soft-tabs-wrap').find('div.box').eq($(this).index()).fadeIn(500).siblings('div.box').hide();
+  $('.menu-item__link').on('click', function() {
+    $('body').removeClass('menu-open-wrapper-page');
+    $('.head-menu').removeClass('menu-burger--opened');
   })
 
   //modals
+  //modal-gallery
+  $('.open-img-in-modal').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
   $('.open-modal').magnificPopup();
+  //modal-video
+  $('.open-video').magnificPopup({
+    type: 'iframe'
+  });
   //animation-form
   $('input').focus(function(){
   $(this).parents('.form-group--animate-js').addClass('form-group--focused');
@@ -56,21 +66,18 @@ $(function(){
     arrows: false,
   });
 
-  //flow-scroll up
-  $("a.button-up").click(function () {
-    var elementClick = $(this).attr("href");
-    var destination = $(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-    return false;
-});
+  
   //fullpage
-  var mql = window.matchMedia('all and (min-width: 1200px)');
-  if (mql.matches) {
+     if (window.matchMedia("(min-width: 1200px)").matches) {
+        $('.footer').addClass('fixed-footer');
+      } 
+
     $('#wrapper').fullpage({
       responsiveWidth: 1200,
       responsiveHeight: 700,
+      scrollingSpeed: 900,
+      anchors:['banner', 'company', 'client', 'service', 'review', 'advantages', 'gallery','vacancies', 'contact-bl'],
       fixedElements: '.header-fixed, .fixed-footer, .message'
     });
-  };
     
 });
