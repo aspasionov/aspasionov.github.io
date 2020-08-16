@@ -1342,8 +1342,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
-  font: 10px "GothamProRegular", Arial, sans-serif;
-  line-height: 190%;
+  font: 10px/190% "GothamProRegular", Arial, sans-serif;
   color: #000;
 }
 
@@ -1955,7 +1954,7 @@ textarea::placeholder {
     content: '';
     position: absolute;
     left: -5%;
-    top: 47px;
+    top: 45px;
     width: 0;
     display: block;
     height: 3px;
@@ -2395,17 +2394,11 @@ textarea::placeholder {
 @media only screen and (min-width: 480px) {
   .footer-catalog__text {
     position: relative;
-    top: -7px;
+    top: -4px;
   }
   .footer-catalog__text .descr {
     display: block;
-    position: absolute;
-    left: -27px;
-    top: 19px;
-    white-space: nowrap;
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
+    font-size: 6px;
   }
 }
 
@@ -2737,6 +2730,7 @@ textarea::placeholder {
 
 .company-item__title .small {
   font-size: 20px;
+  line-height: 1;
 }
 
 .company-item__title sup {
