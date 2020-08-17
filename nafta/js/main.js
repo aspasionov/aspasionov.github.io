@@ -71,8 +71,7 @@ $(function(){
 
     $('#wrapper').fullpage({
       responsiveWidth: 1200,
-      responsiveHeight: 700,
-      scrollingSpeed: 900,
+      scrollingSpeed: 700,
       anchors:['banner', 'company', 'client', 'service', 'review', 'advantages', 'gallery','vacancies', 'contact-bl'],
       fixedElements: '.header-fixed, .fixed-footer, .message'
     });

@@ -2036,8 +2036,8 @@ textarea::placeholder {
 }
 
 .simple-modal {
-  width: 100%;
-  max-width: 300px;
+  width: 80%;
+  max-width: 480px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2247,29 +2247,6 @@ textarea::placeholder {
     position: relative;
     top: 5px;
   }
-  .fp-viewing-banner .header {
-    background-color: transparent;
-  }
-  .fp-viewing-banner .header .menu-item {
-    color: #fff;
-  }
-  .fp-viewing-banner .header .menu-item.active .menu-item__link {
-    color: #fff;
-  }
-  .fp-viewing-banner .header .menu-item__link:before {
-    background-color: #fff;
-  }
-  .fp-viewing-banner .header .menu-item__link:hover {
-    color: #fff;
-  }
-  .fp-viewing-banner .header .contact__tel {
-    color: #fff;
-  }
-  .fp-viewing-banner .header .logo:after {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), rgba(255, 255, 255, 0.3);
-    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2293,6 +2270,29 @@ textarea::placeholder {
     width: 1px;
     height: 100px;
     background: rgba(35, 35, 35, 0.1);
+  }
+  .fp-viewing-banner .header {
+    background-color: transparent;
+  }
+  .fp-viewing-banner .header .menu-item {
+    color: #fff;
+  }
+  .fp-viewing-banner .header .menu-item.active .menu-item__link {
+    color: #fff;
+  }
+  .fp-viewing-banner .header .menu-item__link:before {
+    background-color: #fff;
+  }
+  .fp-viewing-banner .header .menu-item__link:hover {
+    color: #fff;
+  }
+  .fp-viewing-banner .header .contact__tel {
+    color: #fff;
+  }
+  .fp-viewing-banner .header .logo:after {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), rgba(255, 255, 255, 0.3);
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -2440,6 +2440,7 @@ textarea::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 10px;
     padding: 10px;
     background-color: #fff;
     width: 200px;
@@ -3032,7 +3033,20 @@ textarea::placeholder {
 
 @media only screen and (min-width: 1200px) {
   .review {
-    background: url("../img/laboratory-bg.png") no-repeat 100% 50%, #fff url("../img/N2-bg.png") no-repeat 0 65%;
+    background: #fff url("../img/laboratory-bg.png") no-repeat 100% 50%;
+  }
+  .review:before {
+    content: '';
+    height: 646px;
+    width: 146px;
+    background: url("../img/N2-bg.png") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 2;
   }
 }
 
