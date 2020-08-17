@@ -1,18 +1,15 @@
 $(function(){
-
   // $(".mask-phone").mask("+7 (999) 999-99-99");
-
   // add-open-class
+ 
 
   $('.menu-btn').click(function(){
    if($(this).parent().is('.menu-burger--opened')){
      $(this).parent().removeClass('menu-burger--opened');
      $('body').removeClass('menu-open-wrapper-page');
-     $(".menu-btn__text").text("Меню");
    }else{
      $(this).parent().addClass('menu-burger--opened');
      $('body').addClass('menu-open-wrapper-page');
-     $(".menu-btn__text").text("Закрыть");
    }
   });
 

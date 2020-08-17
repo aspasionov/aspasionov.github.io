@@ -1279,8 +1279,8 @@ body {
 }
 
 .section-st {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -1772,6 +1772,13 @@ textarea::placeholder {
   color: #fff;
 }
 
+.menu-btn__text-close {
+  font-size: 10px;
+  line-height: 1;
+  color: #fff;
+  display: none;
+}
+
 .menu-btn__icon {
   margin-left: 15px;
 }
@@ -1809,6 +1816,14 @@ textarea::placeholder {
 }
 
 .menu-burger--opened .menu-btn__icon .burger {
+  display: none;
+}
+
+.menu-burger--opened .menu-btn__text-close {
+  display: block;
+}
+
+.menu-burger--opened .menu-btn__text {
   display: none;
 }
 
@@ -1878,7 +1893,7 @@ textarea::placeholder {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .menu-btn {
     display: none;
   }
@@ -2107,7 +2122,7 @@ textarea::placeholder {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -2116,6 +2131,7 @@ textarea::placeholder {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header .container {
@@ -2982,9 +2998,10 @@ textarea::placeholder {
 .review:after {
   content: '';
   position: absolute;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(15.05%, #FFFFFF), color-stop(80.5%, rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(left, #FFFFFF 15.05%, rgba(255, 255, 255, 0) 80.5%);
   background: linear-gradient(90deg, #FFFFFF 15.05%, rgba(255, 255, 255, 0) 80.5%);
