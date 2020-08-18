@@ -1278,6 +1278,10 @@ body {
   min-height: 100%;
 }
 
+.section {
+  max-height: 800px !important;
+}
+
 .section-st {
   padding-top: 60px;
   padding-bottom: 20px;
