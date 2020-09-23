@@ -4463,7 +4463,7 @@ h3 {
 }
 
 .title:after {
-  content: '';
+  content: "";
   display: block;
   height: 3px;
   width: 100px;
@@ -4521,9 +4521,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .aside .contact__link:hover {
@@ -4598,16 +4598,16 @@ h3 {
 }
 
 .main__slider-item:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: background .5s ease;
-  -o-transition: background .5s ease;
-  transition: background .5s ease;
+  -webkit-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 .main__slider-item:hover:after {
@@ -4647,12 +4647,12 @@ h3 {
 .slick-dots li {
   display: inline-block;
   cursor: pointer;
-  width: 16px;
-  height: 16px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #fff;
   margin: 0px 5px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 
 .slick-dots li:hover {
@@ -4668,6 +4668,21 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  /*reset animation for mobile*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    -o-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  /*----------------------------*/
   .main__slider {
     position: relative;
   }
