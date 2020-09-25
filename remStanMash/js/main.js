@@ -108,7 +108,24 @@ $(function () {
 			$(".list-more").fadeOut("slow");
 		}
 	});
-
+	//makers-slider
+	$(".makers-inner").slick({
+		dots: true,
+		arrows: false,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 599,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 999,
+				settings: "unslick"
+			}
+		]
+	})
 	//slick-slider
 	$('.slider-items').slick({
 		slidesToShow: 1,

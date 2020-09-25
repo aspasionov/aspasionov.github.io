@@ -3001,6 +3001,7 @@ textarea::placeholder {
   border: none;
   padding: 0px 50px 0px 10px;
   color: #fff;
+  border-radius: 0;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -3026,6 +3027,7 @@ textarea::placeholder {
 .search__input:focus {
   background-color: #fff;
   outline: none;
+  border-radius: 0;
   color: #383e5e;
 }
 
@@ -3129,6 +3131,7 @@ textarea::placeholder {
   position: absolute;
   right: 0px;
   top: 0px;
+  padding: 0px;
   height: 100%;
   width: 40px;
   background-color: transparent;
@@ -3510,24 +3513,26 @@ textarea::placeholder {
 
 .slider .slick-dots {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .slider .slick-dots li {
   display: inline-block;
-  margin: 0px 15px;
-  width: 16px;
-  height: 16px;
+  margin: 0px 3px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 1px solid #b7bbe2;
+  background-color: #fff;
+  border: 1px solid #334da6;
 }
 
 .slider .slick-dots li button {
   display: none;
 }
 
-.slider .slick-dots .slick-active {
+.slider .slick-dots li.slick-active {
   background-color: #334da6;
+  border-color: #fff;
 }
 
 .slider-head {
@@ -4361,8 +4366,13 @@ textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #fff;
+  border: 1px solid #b7bbe2;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 1px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .product-info-photo__thumbnails .item img {
@@ -4388,7 +4398,8 @@ textarea::placeholder {
 }
 
 .product-info-photo__thumbnails .slick-current .item {
-  border-color: #b7bbe2;
+  -webkit-box-shadow: inset 0px 0px 1px 1px #b7bbe2;
+          box-shadow: inset 0px 0px 1px 1px #b7bbe2;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5111,6 +5122,129 @@ textarea::placeholder {
   }
   .order-step__icon {
     margin-bottom: 30px;
+  }
+}
+
+.maker-card {
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #e4e8f4;
+  min-height: 220px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.maker-card__img {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.maker-card__about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 24px;
+  color: #686c90;
+  margin-bottom: 0px;
+}
+
+.makers-inner .slick-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.makers-inner .slick-dots li {
+  display: inline-block;
+  margin: 0px 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #334da6;
+}
+
+.makers-inner .slick-dots li button {
+  display: none;
+}
+
+.makers-inner .slick-dots li.slick-active {
+  background-color: #334da6;
+  border-color: #fff;
+}
+
+@media only screen and (min-width: 1000px) {
+  .makers {
+    padding-top: 0px;
+  }
+  .makers-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 1px;
+    padding-left: 1px;
+  }
+  .maker-card {
+    min-height: none;
+    width: 33%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .maker-card {
+    width: 25%;
+  }
+}
+
+.brand-item {
+  background-color: #334da6;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.brand-item__img {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.brand-item__about {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .brand-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand-item__img {
+    margin-bottom: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 30px;
   }
 }
 
