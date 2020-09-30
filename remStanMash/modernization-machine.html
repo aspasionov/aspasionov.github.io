@@ -351,13 +351,18 @@
 		</header>
 		<!-- end-header -->
 		<main class="main">
-			<section class="page-head">
+			<section class="page-head page-head--bg" style="background-image: url(img/banner-img2.png);">
 				<div class="container">
-					<ul class="bread-crumbs">
-						<li><a href="#">Главная</a></li>
-						<li>Каталог</li>
-					</ul>
-					<h1>Станочная оснастка</h1>
+					<div class="page-head-content">
+						<ul class="bread-crumbs">
+							<li>Главная</li>
+						</ul>
+						<h1>Модернизация оборудования</h1>
+						<p>Мы компания, которая сосредоточена на услугах модернизации электронных систем управления,
+							интегрированных в станки с ЧПУ и другого оборудования промышленного назначения. Мы также
+							разрабатываем и поставляем устройства для диагностики и ремонта промышленных электронных устройств.
+						</p>
+					</div>
 				</div>
 			</section>
 			<section class="main-wrapper">
@@ -367,7 +372,7 @@
 							<div class="filter">
 								<div class="filter-item active">
 									<div class="filter-item__title">
-										<span class="text">Производитель</span>
+										<span class="text">тип станка</span>
 										<svg class="icon minus-icon">
 											<use xlink:href="img/icons/svg-symbols.svg#minus-icon"></use>
 										</svg>
@@ -379,7 +384,7 @@
 										<li>
 											<div class="form-st-checkbox">
 												<label>
-													HEIDENHAIN
+													Токарные станки
 													<input type="checkbox">
 													<span class="fake-control"></span>
 												</label>
@@ -389,7 +394,7 @@
 										<li>
 											<div class="form-st-checkbox">
 												<label>
-													FANUC
+													Фрейзерные станки
 													<input type="checkbox" checked>
 													<span class="fake-control"></span>
 												</label>
@@ -399,27 +404,7 @@
 										<li>
 											<div class="form-st-checkbox">
 												<label>
-													BALLUFF
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">8</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													RENISNAW
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">3</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													PRECIZIKA
+													Фрейзерные с ЧПУ
 													<input type="checkbox">
 													<span class="fake-control"></span>
 												</label>
@@ -429,128 +414,32 @@
 										<li>
 											<div class="form-st-checkbox">
 												<label>
-													SIEMENS
+													Сверлильные с ЧПУ
+													<input type="checkbox">
+													<span class="fake-control"></span>
+												</label>
+											</div>
+											<span class="filter-item__value">8</span>
+										</li>
+										<li>
+											<div class="form-st-checkbox">
+												<label>
+													Фуговальные
+													<input type="checkbox">
+													<span class="fake-control"></span>
+												</label>
+											</div>
+											<span class="filter-item__value">3</span>
+										</li>
+										<li>
+											<div class="form-st-checkbox">
+												<label>
+													Долбильные станки
 													<input type="checkbox">
 													<span class="fake-control"></span>
 												</label>
 											</div>
 											<span class="filter-item__value">12</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													OMRON
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">23</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													KELCH
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">6</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													Mario Pinto
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">21</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													Промышленная автоматика
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">36</span>
-										</li>
-									</ul>
-								</div>
-								<div class="filter-item">
-									<div class="filter-item__title">
-										<span class="text">Тех характеристики</span>
-										<svg class="icon minus-icon">
-											<use xlink:href="img/icons/svg-symbols.svg#minus-icon"></use>
-										</svg>
-										<svg class="icon plus-icon">
-											<use xlink:href="img/icons/svg-symbols.svg#plus-icon"></use>
-										</svg>
-									</div>
-									<ul class="filter-item__list">
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													HEIDENHAIN
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">22</span>
-										</li>
-									</ul>
-								</div>
-								<div class="filter-item">
-									<div class="filter-item__title">
-										<span class="text">наличие</span>
-										<svg class="icon minus-icon">
-											<use xlink:href="img/icons/svg-symbols.svg#minus-icon"></use>
-										</svg>
-										<svg class="icon plus-icon">
-											<use xlink:href="img/icons/svg-symbols.svg#plus-icon"></use>
-										</svg>
-									</div>
-									<ul class="filter-item__list">
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													HEIDENHAIN
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">22</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													FANUC
-													<input type="checkbox" checked>
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">14</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													BALLUFF
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">8</span>
-										</li>
-										<li>
-											<div class="form-st-checkbox">
-												<label>
-													RENISNAW
-													<input type="checkbox">
-													<span class="fake-control"></span>
-												</label>
-											</div>
-											<span class="filter-item__value">3</span>
 										</li>
 									</ul>
 								</div>
@@ -560,532 +449,163 @@
 							</div>
 						</aside>
 						<div class="main-content">
-							<div class="brand-item">
-								<div class="brand-item__img">
-									<img src="img/maker-img-3.png" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-1.jpg" alt="">
 								</div>
-								<p class="brand-item__about">Концерн Heidenhain разрабатывает и производит датчики измерения и
-									индикации для систем ЧПУ, требующих высокой точности.</p>
-							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-1.jpg" alt="">
-								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Штревель NORGAU DIN69872 ISO40 с отверстием</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">F, мм</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">BT</span>
-												<span class="value">40</span>
-											</li>
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D1</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">60</span>
-											</li>
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L1, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Товар в наличии</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">733 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-2.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-2.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Штревель NORGAU DIN69872 ISO40 с отверстием</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">F, мм</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">BT</span>
-												<span class="value">40</span>
-											</li>
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D1</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">60</span>
-											</li>
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L1, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Товар в наличии</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">694 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-3.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-3.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">694 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-4.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-4.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">
-												<a href="#" class="price-link">
-													<span>Цену уточняйте</span>
-													<svg class="icon icon-next">
-														<use xlink:href="../img/icons/svg-symbols.svg#icon-next"></use>
-													</svg>
-												</a>
-											</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-5.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-1.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">
-												694 ₽
-											</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-1.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-2.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Штревель NORGAU DIN69872 ISO40 с отверстием</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">F, мм</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">BT</span>
-												<span class="value">40</span>
-											</li>
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D1</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">60</span>
-											</li>
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L1, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Товар в наличии</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">733 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-2.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-3.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Штревель NORGAU DIN69872 ISO40 с отверстием</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">F, мм</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">BT</span>
-												<span class="value">40</span>
-											</li>
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D1</span>
-												<span class="value">4</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">60</span>
-											</li>
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L1, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Товар в наличии</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">694 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-3.jpg" alt="">
+							<div class="mashine-card">
+								<div class="mashine-card__img">
+									<img src="img/mashine-img-4.jpg" alt="">
 								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">694 ₽</span>
+								<div class="mashine-card__content">
+									<div class="mashine-card__number">Арт. 031030630</div>
+									<span class="title-site title-site--h5">Универсальный фрезерный станок Jet JTM-2036PF DRO
+										380B</span>
+									<p>Все три оси станка приводятся в движение от мощного двигателя. Вращение передается через
+										ШВП, что гарантирует высокую точность обработки изделия, а система УЦИ поможет повысить
+										повторяемость.</p>
+									<div class="mashine-card__bottom">
+										<div class="mashine-card__price">
+											<span class="text">Стоимость модернизации:</span>
+											<span class="price">от 26 940 ₽</span>
 										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-4.jpg" alt="">
-								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-									<div class="product-card-characteristic">
-										<ul class="product-card__list">
-											<li>
-												<span class="text">С, диаметр</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">M гайки</span>
-												<span class="value">M16</span>
-											</li>
-											<li>
-												<span class="text">D, диаметр</span>
-												<span class="value">23</span>
-											</li>
-										</ul>
-										<ul class="product-card__list">
-											<li>
-												<span class="text">D3</span>
-												<span class="value">19</span>
-											</li>
-											<li>
-												<span class="text">L, длина</span>
-												<span class="value">35</span>
-											</li>
-											<li>
-												<span class="text">D4</span>
-												<span class="value">10</span>
-											</li>
-										</ul>
-									</div>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">
-												<a href="#" class="price-link">
-													<span>Цену уточняйте</span>
-													<svg class="icon icon-next">
-														<use xlink:href="../img/icons/svg-symbols.svg#icon-next"></use>
-													</svg>
-												</a>
-											</span>
-										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product-card__img">
-									<img src="img/product-img-5.jpg" alt="">
-								</div>
-								<div class="product-card__content">
-									<span class="product-card__number">Арт. 031030630</span>
-									<span class="title-site title-site--h5">Оправка для сверл NORGAU BT40 MAS403BT MK1x50</span>
-
-								</div>
-								<div class="product-card__info">
-									<div class="product-card__аvailability">Под заказ</div>
-									<div class="product-card__info-bottom">
-										<div class="product-card__price">
-											<span class="text">Цена</span>
-											<span class="price">
-												694 ₽
-											</span>
-										</div>
-										<a href="#" class="btn product-card__btn">заказать</a>
+										<a href="#" class="mashine-card__btn btn">модернизировать</a>
 									</div>
 								</div>
 							</div>
@@ -1114,6 +634,62 @@
 						</div>
 					</div>
 				</div>
+			</section>
+			<section class="section-st">
+				<div class="container">
+					<div class="news news--slider">
+						<div class="news-head">
+							<div class="news-head__text">
+								<span class="subtitle">модернизация станков</span>
+								<h2>Реализованные проекты</h2>
+							</div>
+							<div class="arrows-wrap"></div>
+						</div>
+						<div class="news-items news-items--slider">
+							<div class="news-item">
+								<div class="news-item__img">
+									<img src="img/news-img-1.jpg" alt="#">
+								</div>
+								<div class="news-item__content">
+									<span class="news-item__date">1 янв 2019</span>
+									<h4 class="div news-item__title">Модернизация оборудования на металлургическом концерне
+										«СмолЖБИ»
+									</h4>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="news-item__img">
+									<img src="img/news-img-2.jpg" alt="#">
+								</div>
+								<div class="news-item__content">
+									<span class="news-item__date">1 янв 2019</span>
+									<h4 class="div news-item__title">Модернизация оборудования на металлургическом концерне
+									</h4>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="news-item__img">
+									<img src="img/news-img-3.jpg" alt="#">
+								</div>
+								<div class="news-item__content">
+									<span class="news-item__date">23 фев 2019</span>
+									<h4 class="div news-item__title">Модернизация оборудования на металлургическом концерне
+										«Космодром Байконур»</h4>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="news-item__img">
+									<img src="img/news-img-1.jpg" alt="#">
+								</div>
+								<div class="news-item__content">
+									<span class="news-item__date">1 янв 2019</span>
+									<h4 class="div news-item__title">Модернизация оборудования на металлургическом концерне
+										«СмолЖБИ»
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 			<section class="section-st seo-block-wrap">
 				<div class="container">
@@ -1164,7 +740,6 @@
 			</section>
 		</main>
 	</div>
-	<!-- end header -->
 	<!-- footer -->
 	<footer class="footer" id="footer">
 		<div class="footer-top">
