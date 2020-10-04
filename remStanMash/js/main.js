@@ -127,7 +127,7 @@ $(function () {
 			.slice(0, 4) // select next hidden 2 & show them
 			.css({ 'display': 'flex' });
 		if ($(".product-info-list-item:hidden").length == 0) { // check if any hidden divs still exist
-			$(".list-more").fadeOut("slow");
+			$(".list-more").hide();
 		}
 	});
 	//makers-slider

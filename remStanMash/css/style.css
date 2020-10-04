@@ -1293,6 +1293,11 @@ h5,
   font-size: 18px;
 }
 
+h6,
+.title-site--h {
+  font-size: 16px;
+}
+
 .subtitle {
   display: block;
   font-weight: 600;
@@ -5530,6 +5535,405 @@ textarea::placeholder {
   .news-items--slider .news-item {
     margin-left: 0;
     margin-bottom: 0px;
+  }
+}
+
+.machine-list {
+  margin-bottom: 30px;
+}
+
+.machine-list li {
+  position: relative;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.machine-list li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  border-radius: 1px;
+  background-color: #334da6;
+  width: 6px;
+  height: 6px;
+}
+
+.machine-list li .price {
+  font-weight: 600;
+  color: #334da6;
+}
+
+.product-info__characteristic--machine h6 {
+  margin-bottom: 15px;
+}
+
+.machine-item-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.machine-item-link .icon {
+  stroke: #334da6;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 8px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+}
+
+.machine-filter {
+  margin-top: 1px;
+  margin-bottom: 24px;
+}
+
+.machine-filter-item {
+  margin-top: -1px;
+  border: 1px solid #e4e8f4;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.machine-filter-item__text .title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #686c90;
+  display: block;
+}
+
+.machine-filter-item__text .price {
+  font-weight: 600;
+  color: #334da6;
+}
+
+.machine-filter-item .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.machine-filter-item .up-arrow {
+  width: 16px;
+  display: none;
+  stroke: #b7bbe2;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.machine-filter-item .plus-icon {
+  stroke: #b7bbe2;
+}
+
+.machine-filter-item:hover {
+  background-color: #334da6;
+  border-color: #334da6;
+}
+
+.machine-filter-item:hover .machine-filter-item__text .title {
+  color: #fff;
+}
+
+.machine-filter-item:hover .machine-filter-item__text .price {
+  color: #b7bbe2;
+}
+
+.machine-filter-item:hover .plus-icon {
+  display: none;
+}
+
+.machine-filter-item:hover .up-arrow {
+  display: block;
+}
+
+/*--------------machine-table-------------*/
+.machine-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.machine-table thead {
+  display: none;
+  background-color: rgba(228, 232, 244, 0.4);
+  border-top: 1px solid #e4e8f4;
+  border-bottom: 1px solid #e4e8f4;
+  color: #686c90;
+}
+
+.machine-table thead tr {
+  padding: 7px 10px;
+}
+
+.machine-table thead th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  padding-right: 10px;
+}
+
+.machine-table thead th:first-child {
+  padding-left: 10px;
+}
+
+.accessories-item-content {
+  margin-bottom: 10px;
+}
+
+.accessories-item-content .img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accessories-item-content .title-wrap .number {
+  font-size: 12px;
+  line-height: 16px;
+  color: #686c90;
+}
+
+.accessories-item-content .title-wrap h6 {
+  margin-bottom: 0px;
+}
+
+.machine-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #b7bbe2;
+}
+
+.accessories-item-number {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #334da6;
+  text-align: center;
+}
+
+.accessories-item-number:before {
+  content: "Количество";
+  margin-right: 10px;
+}
+
+.accessories-item-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #334da6;
+}
+
+.accessories-item-link .icon {
+  margin-left: 5px;
+  width: 12px;
+  height: 10px;
+  stroke: #334da6;
+}
+
+.accessories-item-link:hover {
+  text-decoration: none;
+}
+
+.accessories-item-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #334da6;
+}
+
+.accessories-item-price:before {
+  content: "Цена";
+  margin-right: 5px;
+}
+
+/*----------------machine-tabs-footer--------------------*/
+.machine-tabs-footer-btn-wrap .btn {
+  height: auto;
+  padding: 10px 20px;
+  line-height: 22px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.machine-tabs-footer-btn-wrap .btn .light-text {
+  display: block;
+  color: #686c90;
+}
+
+.price-wrap {
+  font-size: 12px;
+  line-height: 16px;
+  color: #686c90;
+  margin-bottom: 20px;
+}
+
+.price-wrap .price {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  color: #334da6;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-info__characteristic--machine {
+    width: 100%;
+    display: block;
+  }
+  .product-info__characteristic--machine p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .machine-list li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .machine-filter {
+    margin-left: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .machine-filter-item {
+    width: 50%;
+    margin-left: -1px;
+  }
+  .machine-table {
+    margin-bottom: 15px;
+  }
+  .machine-table thead {
+    display: table-header-group;
+  }
+  .machine-table-row {
+    display: table-row;
+    border: none;
+    padding: 0;
+    margin-bottom: 0px;
+    border-bottom: 20px solid #fff;
+    -webkit-box-shadow: inset 0px -10px 0px 0px #e4e8f4;
+            box-shadow: inset 0px -10px 0px 0px #e4e8f4;
+  }
+  .machine-table-row td {
+    padding: 10px 0px;
+  }
+  .accessories-item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+  }
+  .accessories-item-content .img {
+    margin-bottom: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 145px;
+            flex: 0 0 145px;
+    margin-right: 30px;
+  }
+  .accessories-item-number {
+    text-align: center;
+    display: block;
+  }
+  .accessories-item-number:before {
+    display: none;
+  }
+  .accessories-item-price:before {
+    display: none;
+  }
+  .machine-tabs-footer {
+    margin-bottom: 30px;
+  }
+  .machine-tabs-footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .machine-tabs-footer-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    max-width: 545px;
+    margin-right: 30px;
+  }
+  .machine-tabs-footer-text p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .machine-tabs-footer-btn-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product-info-images--machine {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 370px;
+            flex: 0 0 370px;
+    max-width: 370px;
+  }
+  .machine-list {
+    margin-bottom: 100px;
+  }
+  .soft-tabs-wrap--machine .box {
+    padding: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .product-info__characteristic--machine .product-info__number {
+    margin-bottom: 30px;
+  }
+  .product-info__characteristic--machine p {
+    margin-bottom: 40px;
+  }
+  .machine-list {
+    margin-bottom: 106px;
+  }
+  .machine-filter {
+    margin-top: 0px;
+  }
+  .machine-filter-item {
+    width: 25%;
+    margin-top: 0px;
   }
 }
 
