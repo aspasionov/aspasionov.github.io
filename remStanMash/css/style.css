@@ -1936,6 +1936,7 @@ textarea::placeholder {
   right: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 
 .burger-menu {
@@ -3495,9 +3496,8 @@ textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px -15px;
+  margin: 0px 0px 40px;
   padding: 50px;
-  margin-bottom: 40px;
   position: relative;
   z-index: 2;
 }
@@ -5632,7 +5632,8 @@ textarea::placeholder {
 
 .machine-filter-item .up-arrow {
   width: 16px;
-  display: none;
+  position: absolute;
+  visibility: hidden;
   stroke: #b7bbe2;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -5657,11 +5658,13 @@ textarea::placeholder {
 }
 
 .machine-filter-item:hover .plus-icon {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .machine-filter-item:hover .up-arrow {
-  display: block;
+  position: relative;
+  visibility: visible;
 }
 
 /*--------------machine-table-------------*/
