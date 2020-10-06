@@ -5632,7 +5632,6 @@ textarea::placeholder {
 
 .machine-filter-item .up-arrow {
   width: 16px;
-  display: none;
   stroke: #b7bbe2;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -5646,7 +5645,6 @@ textarea::placeholder {
 .machine-filter-item:hover {
   background-color: #334da6;
   border-color: #334da6;
-  cursor: pointer;
 }
 
 .machine-filter-item:hover .machine-filter-item__text .title {
@@ -5655,10 +5653,6 @@ textarea::placeholder {
 
 .machine-filter-item:hover .machine-filter-item__text .price {
   color: #b7bbe2;
-}
-
-.machine-filter-item:hover .plus-icon {
-  display: none;
 }
 
 .machine-filter-item:hover .up-arrow {
