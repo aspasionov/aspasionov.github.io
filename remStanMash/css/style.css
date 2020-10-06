@@ -5632,8 +5632,7 @@ textarea::placeholder {
 
 .machine-filter-item .up-arrow {
   width: 16px;
-  position: absolute;
-  visibility: hidden;
+  display: none;
   stroke: #b7bbe2;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -5644,27 +5643,25 @@ textarea::placeholder {
   stroke: #b7bbe2;
 }
 
-.machine-filter-item:hover {
+.machine-filter-item:hogver {
   background-color: #334da6;
   border-color: #334da6;
 }
 
-.machine-filter-item:hover .machine-filter-item__text .title {
+.machine-filter-item:hogver .machine-filter-item__text .title {
   color: #fff;
 }
 
-.machine-filter-item:hover .machine-filter-item__text .price {
+.machine-filter-item:hogver .machine-filter-item__text .price {
   color: #b7bbe2;
 }
 
-.machine-filter-item:hover .plus-icon {
-  position: absolute;
-  visibility: hidden;
+.machine-filter-item:hogver .plus-icon {
+  display: none;
 }
 
-.machine-filter-item:hover .up-arrow {
-  position: relative;
-  visibility: visible;
+.machine-filter-item:hogver .up-arrow {
+  display: block;
 }
 
 /*--------------machine-table-------------*/
