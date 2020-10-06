@@ -5643,24 +5643,24 @@ textarea::placeholder {
   stroke: #b7bbe2;
 }
 
-.machine-filter-item:hogver {
+.machine-filter-item:hover {
   background-color: #334da6;
   border-color: #334da6;
 }
 
-.machine-filter-item:hogver .machine-filter-item__text .title {
+.machine-filter-item:hover .machine-filter-item__text .title {
   color: #fff;
 }
 
-.machine-filter-item:hogver .machine-filter-item__text .price {
+.machine-filter-item:hover .machine-filter-item__text .price {
   color: #b7bbe2;
 }
 
-.machine-filter-item:hogver .plus-icon {
+.machine-filter-item:hover .plus-icon {
   display: none;
 }
 
-.machine-filter-item:hogver .up-arrow {
+.machine-filter-item:hover .up-arrow {
   display: block;
 }
 
