@@ -5646,6 +5646,7 @@ textarea::placeholder {
 .machine-filter-item:hover {
   background-color: #334da6;
   border-color: #334da6;
+  cursor: pointer;
 }
 
 .machine-filter-item:hover .machine-filter-item__text .title {
