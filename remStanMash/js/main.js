@@ -61,7 +61,7 @@ $(function () {
 	$('.open-modal').magnificPopup();
 
 	//animation-form
-	$('input').focus(function () {
+	$('input, textarea').on("focus", function () {
 		$(this).parents('.form-group--animate-js').addClass('form-group--focused');
 	});
 
