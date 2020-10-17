@@ -185,7 +185,23 @@ $(function () {
 			}
 		]
 	});
-
+	//client-slider
+	$('.client-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		rows: 0,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	})
 	//slick-slider
 	$('.slider-items').slick({
 		slidesToShow: 1,
