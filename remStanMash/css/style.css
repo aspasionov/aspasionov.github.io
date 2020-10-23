@@ -1138,7 +1138,7 @@ body {
   background-size: cover;
   background-position: 100% 0;
   color: #fff;
-  background-color: #6e7281;
+  background-color: #1d337e;
   padding: 0px;
 }
 
@@ -5193,8 +5193,8 @@ textarea::placeholder {
 }
 
 .catalog-item:hover {
-  background-color: #6e7281;
-  border-color: #6e7281;
+  background-color: #1d337e;
+  border-color: #1d337e;
 }
 
 .catalog-item:hover .icon {
@@ -5319,7 +5319,7 @@ textarea::placeholder {
 
 /*----------upgrade-----------*/
 .upgrade {
-  background-color: #6e7281;
+  background-color: #1d337e;
 }
 
 .upgrade-header .subtitle {
@@ -5336,7 +5336,7 @@ textarea::placeholder {
 
 .upgrade-item {
   margin-top: -1px;
-  background-color: #6e7281;
+  background-color: #1d337e;
   border: 1px solid #334da6;
   min-height: 200px;
   padding: 20px 25px;
