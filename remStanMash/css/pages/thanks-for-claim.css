@@ -1,0 +1,14 @@
+.claim {
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.claim__text span {
+  font-weight: 600;
+}
+
+.claim__btn {
+  width: 370px;
+}

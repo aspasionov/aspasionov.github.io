@@ -1,6 +1,6 @@
 $(function () {
 
-	// $(".mask-phone").mask("+7 (999) 999-99-99");
+	$(".mask-phone").mask("+7 (999) 999-99-99");
 	//mobile-menu-dropdown
 	// $('.catalog-mobile__link').on('click', function () {
 	// 	$(this).siblings('.catalog-mobile-submenu').slideToggle(300);
@@ -58,7 +58,30 @@ $(function () {
 			.parents('div.soft-tabs-wrap').find('div.box').eq($(this).index()).fadeIn(500).siblings('div.box').hide();
 	})
 	//modals
-	$('.open-modal').magnificPopup();
+	$('.open-modal').magnificPopup({
+		closeMarkup: `<button title="%title%" class="mfp-close">
+		<span class="text">закрыть</span>
+			<svg class="icon icon-close">
+				<use xlink:href="img/icons/svg-symbols.svg#icon-close"></use>
+			</svg>
+		</button>`,
+		closeBtnInside: false
+	});
+
+	$('.open-img-in-modal').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true,
+			arrowMarkup: `<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>`
+		},
+		showCloseBtn: true,
+		closeMarkup: `<button title="%title%" class="mfp-close">
+		<span class="text">закрыть</span>
+			<svg class="icon icon-close">
+				<use xlink:href="img/icons/svg-symbols.svg#icon-close"></use>
+			</svg>
+		</button>`,
+	});
 
 	//animation-form
 	$('input, textarea').on("focus", function () {
@@ -82,9 +105,9 @@ $(function () {
 		return false;
 	});
 	//filter-item
-	$('.filter-item__list').slideUp();
+	$('.filter-item__list').hide();
 	if ($('.filter-item').is(".active")) {
-		$('.filter-item.active .filter-item__list').slideDown();
+		$('.filter-item.active .filter-item__list').show();
 	}
 
 	$('.filter-item__title').on('click', function () {
