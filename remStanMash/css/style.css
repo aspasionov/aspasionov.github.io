@@ -2609,6 +2609,10 @@ textarea::placeholder {
   opacity: 0.9;
 }
 
+.mfp-container {
+  padding: 10px;
+}
+
 .mfp-close {
   position: fixed;
   top: 10px;
@@ -2645,7 +2649,7 @@ textarea::placeholder {
   stroke: #334da6;
 }
 
-.mfp-close.active {
+.mfp-close:active {
   top: 10px;
 }
 
