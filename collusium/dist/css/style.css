@@ -1,0 +1,440 @@
+/*---------variebless------------*/
+:root {
+	--bs-dark: #22262a;
+}
+.text-danger {
+	color: #cf2929 !important;
+}
+/*----------global-style----------------*/
+body {
+	min-height: 100%;
+	font: 15px/22px "Poppins", Arial, sans-serif;
+	color: #22262a;
+}
+.site-wrapper {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.wrapper {
+	min-width: 320px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.btn {
+	border-radius: 0;
+	padding: 4px 25px;
+}
+.btn-dark {
+	background-color: #22262a;
+}
+.btn-dark:hover {
+	background-color: #414141;
+}
+h1,
+.title-h1 {
+	display: block;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1;
+}
+h2,
+.title-h2 {
+	display: block;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.5;
+}
+h3 {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 1.4;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.form-control {
+	min-height: calc(1.5em + 0.75rem + 2px);
+	padding: 11px 11px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #22262a;
+	background-color: #fff;
+	background-clip: padding-box;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+	border-radius: 5px;
+}
+/*------------header-----------*/
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navbar-light {
+	background-color: #e5e5e5;
+}
+.navbar-brand {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 42px;
+	color: #22262a;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size: 18px;
+	line-height: 27px;
+}
+.icon-link {
+	display: inline-block;
+}
+/*------------banner-----------*/
+.banner {
+	background: #ccc url(../../img/banner-bg.jpg) no-repeat 50% 50% / cover;
+	min-height: 480px;
+	padding: 40px 0px;
+	display: flex;
+	flex-direction: column;
+	background-attachment: fixed;
+}
+.banner .container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+.banner-text .text {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.2;
+}
+.banner-text-btn-wrap .btn + .btn {
+	margin-left: 15px;
+}
+/*------------gallery-------------------*/
+.gallery {
+	padding-top: 40px;
+	margin-bottom: 80px;
+}
+.gallery-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.gallery-img--lg {
+	position: relative;
+}
+.gallery-img--lg:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.gallery-img--lg .btn {
+	position: absolute;
+	bottom: 25px;
+	left: 30px;
+	z-index: 1;
+}
+/*------------fashion-------------------*/
+.fashion {
+	margin-bottom: 60px;
+}
+.fashion-head {
+	margin-bottom: 30px;
+}
+.fashion-head h2 {
+	margin-bottom: 15px;
+}
+.fashion-card__img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 25px;
+}
+.fashion-card__price .discount {
+	margin-right: 25px;
+}
+/*------------style-------------------*/
+.style {
+	margin-bottom: 60px;
+}
+.style-link-wrap a {
+	display: block;
+	margin-bottom: 60px;
+	margin-right: 10px;
+}
+.style-link-wrap a:hover {
+	text-decoration: none;
+}
+.style-link-wrap {
+	transform: translate(20px, -60px);
+}
+.style-link-wrap img {
+	border: 20px solid #fff;
+}
+.style-img-lg img,
+.style-img-md img {
+	width: 100%;
+	object-fit: cover;
+}
+/*----------------banner--second-st----------------*/
+.banner--second-st {
+	background-image: url(../../img/tachen-bg.jpg);
+	background-position: 100% 50%;
+	margin-bottom: 60px;
+}
+.banner--second-st .container {
+	justify-content: flex-start;
+	align-items: center;
+}
+/*----------------footer----------------*/
+.footer-content {
+	background-color: #f2f8fc;
+	padding-top: 40px 0px;
+}
+.footer-logo {
+	display: block;
+	padding: 0;
+}
+.company-descr {
+	margin-bottom: 30px;
+}
+.company-info > * {
+	display: block;
+}
+.company-info a {
+	color: inherit;
+	text-decoration: none;
+}
+.company-info .mail {
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #22262a;
+}
+
+.social-item {
+	color: #22262a;
+	font-size: 17px;
+}
+.footer-title {
+	display: block;
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 42px;
+	color: #22262a;
+}
+.footer-form {
+	position: relative;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.footer-form input {
+	width: 100%;
+	border: none;
+	padding: 11px 70px 11px 10px;
+}
+.footer-form input:focus {
+	outline: none;
+}
+.footer-form button {
+	background-color: transparent;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	font-weight: 600;
+	padding: 11px 20px;
+}
+.footer-list-title {
+	display: block;
+	margin-bottom: 25px;
+}
+.footer-list {
+	list-style: none;
+	margin-bottom: 30px;
+	padding: 0px;
+}
+.footer-list li + li {
+	margin-top: 20px;
+}
+.footer-list a {
+	color: inherit;
+	text-decoration: none;
+}
+/*-------------copyright--------------*/
+.copyright {
+	background-color: #e7f5f8;
+}
+/*-------------media-------------------*/
+@media (min-width: 576px) {
+	.banner .container {
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+	.banner--second-st .container {
+		justify-content: flex-start;
+	}
+}
+@media (min-width: 768px) {
+	.fashion-card__img {
+		height: 370px;
+		margin-bottom: 35px;
+	}
+	.footer-list {
+		margin-bottom: 0px;
+	}
+}
+@media (min-width: 992px) {
+	.banner {
+		min-height: 745px;
+		height: 100vh;
+		padding: 100px 0px;
+	}
+	.banner-text .text {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	h1,
+	.title-h1 {
+		font-size: 80px;
+	}
+	h2,
+	.title-h2 {
+		font-size: 20px;
+	}
+	.banner-text-btn-wrap .btn + .btn {
+		margin-left: 30px;
+	}
+
+	.gallery {
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+	.fashion {
+		margin-bottom: 100px;
+	}
+	.fashion-head {
+		margin-bottom: 70px;
+	}
+	.style {
+		margin-bottom: 100px;
+	}
+	.style-link-wrap img {
+		border-right: none;
+	}
+	.style-img-lg {
+		margin-top: 80px;
+	}
+	.banner--second-st {
+		margin-bottom: 100px;
+	}
+	.banner--second-st .banner-text .title-h1 {
+		margin-bottom: 25px;
+	}
+	.footer-content {
+		padding: 100px 0px;
+	}
+	.footer-logo {
+		margin-bottom: 17px;
+	}
+	.company-descr {
+		margin-bottom: 40px;
+	}
+	.footer-form {
+		margin-bottom: 70px;
+	}
+
+	/*---------------------animation-------------------------*/
+	@-webkit-keyframes fadeInLeft {
+		from {
+			opacity: 0;
+			-webkit-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		}
+
+		to {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.animate__fadeInLeft {
+		opacity: 0;
+	}
+	.animate__fadeInLeft._active {
+		-webkit-animation-name: fadeInLeft;
+		animation-name: fadeInLeft;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeInRight {
+		from {
+			opacity: 0;
+			-webkit-transform: translate3d(100%, 0, 0);
+			transform: translate3d(100%, 0, 0);
+		}
+
+		to {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.animate__fadeInRight {
+		opacity: 0;
+	}
+	.animate__fadeInRight._active {
+		-webkit-animation-name: fadeInRight;
+		animation-name: fadeInRight;
+		animation-duration: 0.8s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+
+		to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.fashion .row .fashion-card {
+		opacity: 0;
+	}
+	.fashion .row._active .fashion-card {
+		animation-name: fadeInUp;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+	.banner-text {
+		opacity: 0;
+	}
+	.banner-text._active {
+		animation-name: fadeIn;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+}
