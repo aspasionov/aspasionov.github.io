@@ -92,12 +92,11 @@ img {
 }
 /*------------banner-----------*/
 .banner {
-	background: url(../../img/banner-bg.jpg) no-repeat 50% 50% / cover;
+	background: #ccc url(../../img/banner-bg.jpg) no-repeat 50% 50% / cover;
 	min-height: 480px;
 	padding: 40px 0px;
 	display: flex;
 	flex-direction: column;
-	background-attachment: fixed;
 }
 .banner .container {
 	flex: 1;
@@ -187,7 +186,7 @@ img {
 .banner--second-st {
 	background-image: url(../../img/tachen-bg.jpg);
 	background-position: 100% 50%;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 }
 .banner--second-st .container {
 	justify-content: flex-start;
@@ -436,5 +435,10 @@ img {
 		animation-name: fadeIn;
 		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
+	}
+}
+@media (min-width: 1200px) {
+	.banner {
+		background-attachment: fixed;
 	}
 }
