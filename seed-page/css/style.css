@@ -10893,7 +10893,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: green;
+  background-color: #fff;
   font: 16px "Open Sans", Arial, sans-serif;
   line-height: 28px;
   color: #000;
@@ -11083,7 +11083,7 @@ a:hover {
 @media only screen and (min-width: 1200px) {
   body {
     background: url("../img/body-bg-left.jpg") no-repeat 0 0, #369040 url("../img/body-bg-left.jpg") no-repeat 100% 0;
-    background-size: 430px auto;
+    background-size: 400px auto;
   }
 }
 
