@@ -11644,6 +11644,9 @@ textarea::placeholder {
     text-align: center;
     margin-bottom: 20px;
   }
+  .box:not(.visible) {
+    display: none;
+  }
   .box:not(.visible) .box-content {
     display: block;
   }
