@@ -12296,6 +12296,9 @@ textarea::placeholder {
     padding: 10px 15px;
     position: relative;
   }
+  .product-info .product-info-list:last-child {
+    border: none;
+  }
   .product-info .product-info-list:after {
     content: "";
     width: 1px;
