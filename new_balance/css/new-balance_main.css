@@ -8,91 +8,45 @@
 	display: flex;
 	justify-content: center;
 }
-.main-new-b-img {
+.main-new-b__img {
+	flex-grow: 1;
 	position: relative;
-	padding: 70px 0px 90px;
 }
-.main-new-b-img img {
-	height: 100%;
-	object-fit: cover;
-}
-.main-new-b-img:after {
+.main-new-b__img:before {
 	content: "";
 	position: absolute;
-	z-index: 2;
-	bottom: 0;
-	opacity: 0.8;
+	z-index: 3;
 }
-.main-new-b-img:before {
-	content: "";
-	position: absolute;
+.main-new-b__img_women {
+	background: url("../img/main-new-b-left-bg.png") no-repeat 100% 0;
 }
-.main-new-b-img img {
-	position: relative;
-	z-index: 1;
+.main-new-b__img_man {
+	background: url("../img/main-new-b-right-bg.png") no-repeat 0 0;
 }
-.main-new-b-img .text {
-	font-family: "DIN Pro B";
-	font-style: italic;
-	font-weight: bold;
-	font-size: 144px;
-	line-height: 1;
-	text-align: center;
-	text-transform: uppercase;
-	color: rgba(238, 238, 238, 0.6);
-	transform: rotate(-90deg);
-	position: absolute;
-	white-space: nowrap;
-}
-.main-new-b-img_women {
-	padding-right: 7%;
-}
-.main-new-b-img_man {
-	padding-left: 7%;
-}
-.main-new-b-img_women:after {
-	width: 383px;
-	height: 304px;
-	background: url("../img/new-b-banner-img-1-waves.svg") no-repeat 0 0;
-	right: 75px;
-}
-.main-new-b-img_women:before {
+
+.main-new-b__img_women:before {
 	width: 383px;
 	height: 304px;
 	background: url("../img/new-b-banner-sneaker-1.png") no-repeat 0 0;
-	right: -214px;
+	right: -182px;
 	top: 180px;
-	z-index: 3;
 }
-.main-new-b-img_man:after {
-	width: 383px;
-	height: 304px;
-	background: url("../img/new-b-banner-img-2-waves.svg") no-repeat 0 0;
-	left: -66px;
-}
-.main-new-b-img_man:before {
-	width: 383px;
-	height: 304px;
+
+.main-new-b__img_man:before {
+	width: 378px;
+	height: 398px;
 	background: url("../img/new-b-banner-sneaker-2.png") no-repeat 0 0;
-	left: -128px;
-	top: 101px;
-	z-index: 2;
+	left: -63px;
+	top: 78px;
 }
-.main-new-b-img_women .text {
-	right: -184px;
-	bottom: 94px;
-}
-.main-new-b-img_man .text {
-	left: -223px;
-	right: auto;
-	bottom: 123px;
-}
-.main-new-b-text {
+
+.main-new-b__text {
 	text-align: center;
-	max-width: 550px;
+	max-width: 540px;
 	position: relative;
 	background-color: #fff;
-	padding: 70px 4% 90px;
+	padding: 70px 90px 90px 90px;
+	flex-shrink: 0;
 }
 .main-new-b-text:after,
 .main-new-b-text:before {
@@ -101,31 +55,35 @@
 }
 .new-balance-template .reviews-carousel .owl-nav > button.owl-next:before,
 .reviews-carousel .owl-nav > button.owl-next:after {
-	background: #000;
+	background: #fff;
 }
-.main-new-b-text .title {
+.main-new-b__title {
 	font-weight: 700;
 	font-size: 34px;
 	line-height: 40px;
 }
-.main-new-b-text .title span {
+.main-new-b__title span {
 	color: #e21836;
+	display: block;
 }
-.main-new-b-text .percent {
+.main-new-b__percent {
 	font-weight: 700;
 	font-size: 144px;
 	line-height: 1.1;
 	color: #e21836;
 }
-.main-new-b-text .buttons {
+.main-new-b__buttons {
 	display: inline-block;
 	max-width: 270px;
 }
-.main-new-b-text .buttons > * + * {
+.main-new-b__buttons > * + * {
 	margin-top: 13px;
 }
 .new-balance-template .btn {
 	background-color: #e21836;
+}
+.new-balance-template .btn:hover {
+	background-color: #ca001e;
 }
 .new-balance-template .card-discount {
 	background-color: #c6e218;
@@ -138,7 +96,7 @@
 }
 
 .new-balance-template .reviews-carousel .owl-nav > button.owl-next {
-	background-color: #c6e218;
+	background-color: #e21836;
 }
 /* benners */
 .banner-new-b {
@@ -258,6 +216,7 @@
 	position: relative;
 	max-width: 637px;
 }
+
 .banner-new-b_second .banner-new-b-img {
 	left: -60px;
 	top: -20px;
@@ -275,6 +234,9 @@
 	left: -30px;
 }
 /*discount*/
+.new-balance-template .discount {
+	margin-bottom: 50px;
+}
 .new-balance-template .discount-inner {
 	align-items: flex-start;
 }
@@ -330,6 +292,20 @@
 
 .new-balance-template .catalog-product .banner-new-b-title {
 	margin-left: 0px;
+}
+.new-balance-template .catalog-product .banner-new-b-descr {
+	padding-left: 145px;
+	max-width: 632px;
+}
+.new-balance-template .catalog-product .banner-new-b-img {
+	position: absolute;
+	left: 560px;
+	top: -60px;
+}
+.new-balance-template .catalog-product .banner-new-b_second .banner-new-b-img {
+	position: absolute;
+	left: -60px;
+	top: -20px;
 }
 /*product-catalog*/
 .new-balance-template .sp-ad-catalog__tt {
