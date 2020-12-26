@@ -81,6 +81,7 @@
 }
 .new-balance-template .btn {
 	background-color: #e21836;
+	border-radius: 0;
 }
 .new-balance-template .btn:hover {
 	background-color: #ca001e;
