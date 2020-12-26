@@ -66,7 +66,7 @@
 		display: none;
 	}
 	.banner-new-b-title {
-		min-width: none;
+		min-width: auto;
 	}
 	.banner-new-b_second .banner-new-b-title img {
 		display: none;
