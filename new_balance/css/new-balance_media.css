@@ -81,6 +81,10 @@
 		display: inline-block;
 		padding: 15px 15px 15px 35px;
 	}
+
+	.new-balance-template .discount-title-img {
+		display: none;
+	}
 }
 /* end media max width 980 pixels */
 

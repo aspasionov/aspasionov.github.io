@@ -283,12 +283,6 @@
 	position: relative;
 }
 
-.new-balance-template .discount-title .md-text {
-	font-size: 36px;
-}
-.new-balance-template .discount-title .lg-text {
-	font-size: 60px;
-}
 .new-balance-template .discount-title-img {
 	position: absolute;
 	top: 60px;

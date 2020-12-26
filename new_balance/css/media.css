@@ -925,7 +925,6 @@
 		line-height: 1;
 		text-align: center;
 	}
-
 	.discount-title .lg-text {
 		margin-top: 0px;
 	}
@@ -939,9 +938,6 @@
 	}
 	.discount-about {
 		flex: 1 0 25%;
-	}
-	.discount-about .title {
-		padding-left: 0;
 	}
 
 	.catalog-about-prod {
