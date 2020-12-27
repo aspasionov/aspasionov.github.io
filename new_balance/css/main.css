@@ -2084,9 +2084,6 @@ body {
 	margin-bottom: 10px;
 }
 
-.modal-contacts-form .btn {
-}
-
 .icon-input {
 	position: relative;
 }
@@ -2161,7 +2158,7 @@ body {
 	border: 1px solid #b2b2b2;
 	line-height: 26px;
 	min-width: 48px;
-	ext-overflow: ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	cursor: default;

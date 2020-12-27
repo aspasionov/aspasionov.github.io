@@ -138,16 +138,22 @@
 		line-height: 35px;
 		padding: 0px 15px;
 	}
+
 	.banner-new-b-content {
 		padding-right: 0px;
 	}
 	.banner-new-b-title .icon {
 		display: none;
 	}
-	.new-balance-template .catalog-product .banner-new-b-descr {
-		font-size: 16px;
+	.banner-new-b-descr {
+		font-size: 18px;
+		padding: 0px;
 		line-height: 20px;
-		padding-left: 0;
+		max-width: none;
+	}
+	.new-balance-template .catalog-product .banner-new-b-descr {
+		padding: 0px;
+		max-width: none;
 	}
 	/*discount*/
 	.new-balance-template .discount-about .title {
