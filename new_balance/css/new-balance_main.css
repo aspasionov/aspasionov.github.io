@@ -291,19 +291,19 @@
 	background: url("../img/discount-about-icon.svg") no-repeat 0 0;
 }
 
-.new-balance-template .catalog-product .banner-new-b-title {
+.catalog-product .banner-new-b-title {
 	margin-left: 0px;
 }
-.new-balance-template .catalog-product .banner-new-b-descr {
+.catalog-product .banner-new-b-descr {
 	padding-left: 145px;
 	max-width: 632px;
 }
-.new-balance-template .catalog-product .banner-new-b-img {
+.catalog-product .banner-new-b-img {
 	position: absolute;
 	left: 560px;
 	top: -60px;
 }
-.new-balance-template .catalog-product .banner-new-b_second .banner-new-b-img {
+.catalog-product .banner-new-b_second .banner-new-b-img {
 	position: absolute;
 	left: -60px;
 	top: -20px;

@@ -7,7 +7,7 @@
 		margin-left: 0;
 		padding-left: 10px;
 	}
-	.new-balance-template .catalog-product .banner-new-b-descr {
+	.catalog-product .banner-new-b-descr {
 		padding-left: 82px;
 		max-width: 80%;
 	}
@@ -97,7 +97,7 @@
 	.new-balance-template .discount-title-img {
 		display: none;
 	}
-	.new-balance-template .catalog-product .banner-new-b_second .banner-new-b-descr {
+	.catalog-product .banner-new-b_second .banner-new-b-descr {
 		padding: 15px 15px 15px 35px;
 		max-width: none;
 	}
@@ -151,7 +151,7 @@
 		line-height: 20px;
 		max-width: none;
 	}
-	.new-balance-template .catalog-product .banner-new-b-descr {
+	.catalog-product .banner-new-b-descr {
 		padding: 0px;
 		max-width: none;
 	}
