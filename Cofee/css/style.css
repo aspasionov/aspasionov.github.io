@@ -1833,6 +1833,9 @@ textarea::placeholder {
   .menu__item {
     margin-bottom: 30px;
   }
+  .header-menu {
+  padding: 70px 20px 20px 20px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
