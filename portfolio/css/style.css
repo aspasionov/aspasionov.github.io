@@ -4538,6 +4538,9 @@ h3 {
           flex: 0 0 auto;
   margin-right: 10px;
 }
+.aside .contact__link .icon-linkedin {
+	transform: translateY(-3px);
+}
 
 .aside__social {
   text-align: center;
